@@ -4,7 +4,7 @@ Participantes:
 
 ■ Jesús Mocsáry Acevedo - UX/UI Designer
 
-■ Jadir Rojas - Front-end Developer
+■ Jadir Rojas - Frontend Developer
 
 ■ Ruthciris - Frontend Developer
 
