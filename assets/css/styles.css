@@ -54,6 +54,7 @@ h2{
 
 #email, #password {
     margin: 10px auto 0px;   
+    
 }
 
 .button{
@@ -64,8 +65,9 @@ h2{
     color: rgb(199, 20, 20);
     font-weight: 200;
     font-size: 1em;
-    background-color: rgb(100, 148, 237);
-    width: 80%;
+    background-color: rgb(1, 1, 1);
+    width: 100%;
+    text-align: center;
 }
 
 

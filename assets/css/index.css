@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@400;500&display=swap');
+
+:root {
+    /* Typography */
+    --font-comforter: 'Comforter', sans-serif;
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-urbanist: 'Urbanist', sans-serif;
+  
+    /* Palette */
+    --forest-green: #489F31;
+    --deep-purple: #75419E;
+    --charcoal-gray: #1D2229 ;
+    --black: #000000;
+    --white: #FFFFFF;
+    --deep-red: #C51F1F;
+    --deep-orange: #DB681C;
+    --emerald-green: #2DA44E;
+   
+  
+    /* Font-sizes */
+    --font-display: 6rem;
+    --font-jumbo: 4.5rem;
+    --font-large: 2.5rem;
+    --font-medium: 2rem;
+    --font-small: 1.5rem;
+    --font-xsmall: 1.25rem;
+    --font-xxsmall: 1rem;
+  
+  }
+
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+    background-color: var(--black);
+    color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+/*Inicio del header*/
+
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    height: 52px;
+}
+
+.header_top_left{
+    display: flex;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xxsmall);
+    align-items: center;
+    margin-left: 160px;
+}
+
+.header_top_left a {
+    display: flex;
+    margin-right: 60px; 
+}
+
+.header_top_left img {
+    margin-right: 5px; 
+}
+
+.header_top_right{
+    display: flex;
+    margin-right: 160px;
+    align-items: center;
+}
+
+.header_top_right a{
+    display: flex;
+    margin-right: 15px;
+    height: 28px;
+    width: 28px;
+    background-color: var(--charcoal-gray);
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+.header_bottom{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    height: 140px;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+}
+
+.header_bottom img{
+    height: 55px;
+    margin-left: 130px;
+}
+
+.header_bar{
+    display: flex;
+    color: var(--black);
+    margin-left: 140px;
+}
+
+.header_bar li{
+    margin-right: 20px;
+}
+
+.header_bar_button{
+    display: flex;
+    font-family: var(--font-outfit);
+    color: var(--black);
+    margin-right: 130px;
+}
+
+.header_bar_button li{
+    margin-right: 20px;
+    font-size: var(--font-xxsmall);
+}
+
+.button_white{
+    display: flex;
+    border: 1px solid var(--black); 
+    border-radius: 4px;
+    width: 108px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_green{
+    display: flex;
+    background-color: var(--forest-green);
+    color: var(--white);
+    padding: 16px;
+    border-radius: 4px;
+    width: 134px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Fin del header*/
+
+/*Inicio del main*/
+
+/* Inicio sección hero */
+
+.section_hero { 
+    position: relative;
+    height: 768px;
+}
+
+.section_hero_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('/assets/img/background_image/hero_img.png');
+    z-index: -1;
+}
+
+.container_hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+    height: 431px;
+    margin-left: 130px;
+}
+.container_hero h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-display);
+    margin: 160px 0px 0px 0px;
+    line-height: 80px;
+}
+
+.container_hero p{
+    color: var(--white);
+    font-family: var(--font-urbanist);
+    font-size: var(--font-small);
+    line-height: 32px;    
+    margin: 20px 150px 0px 0px;
+}
+
+.ul_buttons{
+    display: flex;
+    margin: 40px 150px 0px 0px;
+    font-family: var(--font-outfit);
+    font-size: var(--font-xsmall);
+}
+
+.button_conocer_mas{
+    display: flex;
+    border: 1px solid var(--white); 
+    border-radius: 4px;
+    width: 139px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.button_registrarse{
+    display: flex;
+    background-color: var(--forest-green);
+    color: var(--white);
+    padding: 16px;
+    border-radius: 4px;
+    width: 134px;
+    height: 46px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fin sección hero */
+
+
+/* Inicio sección clases y programas*/
+.section_clases_y_programas{
+    display: flex;
+    flex-direction: column;
+    height: 1058px;
+    background-image: url('/assets/img/background_image/clases_img.png');
+}
+
+h1{
+    position: absolute;
+    font-family: var(--font-urbanist);
+    font-size: 8.8rem;
+    line-height: 140px;
+    color: #ffffff13;
+    width: 723px;
+    margin: 5px 0px 0px 30px;
+    font-weight:bolder;
+}
+.container_clases_y_programas{
+    margin: 85px 0px 0px 130px;
+
+}
+
+
+.container_clases_y_programas h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    line-height: 60px;
+    width: 575px;
+}
+
+
+.container_clases_y_programas p{
+    color: var(--white);
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+    line-height: 28px;
+    width: 476px;
+    margin-top: 25px;
+    font-weight: 400;
+}
+
+/* Fin sección clases y programas*/
+
+
+/*Inicio sección membresías */
+.section_membresías{
+    display: flex;
+    flex-direction: column;
+    height: 952px;
+    align-items: center;
+    background-color: #090707;
+}
+
+
+.section_membresías h2{
+    font-family: var(--font-urbanist);
+    font-size: 8.8rem;
+    color: #ffffff13;
+    font-weight: 900;
+    position: absolute;
+}
+
+.section_membresías h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    line-height: 60px;
+    width: 543px;
+    margin-top: 90px;
+}
+
+
+
+/*Fin sección membresías */
+
+
+/*Inicio sección nosotros*/
+.section_nosotros{
+    display: flex;
+    flex-direction: column;
+    height: 1680px;
+    background-image: url('/assets/img/background_image/nosotros_img.png');
+    align-items: center;
+    background-position: center bottom; 
+    background-size: cover;
+   
+}
+
+.nosotros_head{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 130px;
+    align-items: center;
+}
+
+
+.section_nosotros h2{
+    font-family: var(--font-urbanist);
+    font-size: 8.8rem;
+    color: #ffffff13;
+    font-weight: 900;
+    position: absolute;
+}
+
+.section_nosotros h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    margin-top: 70px;
+    text-align: center;
+}
+
+.section_nosotros p{
+    color: var(--white);
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+    margin-top: 30px;
+    text-align: center;
+    width: 924px;
+    line-height: 28px;
+    font-weight: bolder;
+}
+
+.container_instructores{
+    display: flex;
+    width: 1172px;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.container_instructores img{
+    width: 370px;
+    height: 520px;
+    
+}
+
+
+.container_mision_valores_vision{
+    display: flex;
+    width: 1172px;
+}
+
+.mision_valores_vision{
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.mision_valores_vision h4{
+    font-family: var(--font-outfit);
+    font-size: var(--font-large);
+    color: var(--forest-green);
+}
+
+.mision_valores_vision p{
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+    line-height: 28px;
+    width: 292px;
+    height: 280px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+.section_estadisticas{
+    display: flex;
+    flex-direction: column;
+    height: 768px;
+    background-image: url('/assets/img/background_image/estadisticas_img.png');
+}
+
+/*Fin del main*/
