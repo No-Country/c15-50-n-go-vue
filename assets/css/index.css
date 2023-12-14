@@ -42,9 +42,7 @@
 }
 
 html{
-    background-color: var(--black);
-    color: #FFFFFF;
-    min-width: 100%;
+    color: var(--white);
     overflow-x: hidden;
 }
 
@@ -65,15 +63,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--black); /* Puedes ajustar el color de fondo según tus preferencias */
+    background-color: var(--black);
     z-index: 1000; 
-
 }
 
 body{
-    margin-top: 150px; 
+    margin-top: 80px;
+    background-color: var(--black); 
 }
-
 
 .header_top{
     display: flex;
@@ -200,17 +197,15 @@ body{
     border: 2px solid #2e6b1c; 
     font-weight: bolder;
 }
-
-
 /*Fin del header*/
 
-/*Inicio del main*/
+/*----------------------------------Inicio del main--------------------------------------*/
 
 /* Inicio sección hero */
 
 .section_hero { 
     position: relative;
-    height: 768px;
+    height: 630px;
 }
 
 .section_hero_img {
@@ -220,36 +215,39 @@ body{
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('/assets/img/background_image/hero_img.png');
-    z-index: -1;
+    background-position: bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .container_hero{
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 850px;
+    width: 650px;
     height: 431px;
     margin-left: 130px;
+    
 }
 .container_hero h3{
     color: var(--forest-green);
     font-family: var(--font-outfit);
-    font-size: var(--font-display);
-    margin: 160px 0px 0px 0px;
-    line-height: 80px;
+    font-size: var(--font-jumbo);
+    margin: 150px 0px 0px 0px;
+    line-height: 60px;
 }
 
 .container_hero p{
     color: var(--white);
     font-family: var(--font-urbanist);
-    font-size: var(--font-small);
-    line-height: 32px;    
+    font-size: var(--font-xsmall);
+    line-height: 30px;    
     margin: 20px 150px 0px 0px;
 }
 
 .ul_buttons{
     display: flex;
-    margin: 40px 150px 0px 0px;
+    margin: 30px 150px 0px 0px;
     font-family: var(--font-outfit);
     font-size: var(--font-xsmall);
 }
@@ -296,6 +294,7 @@ body{
     flex-direction: column;
     height: 1058px;
     background-image: url('/assets/img/background_image/clases_img.png');
+    background-size: cover;
 }
 
 h1{
@@ -305,11 +304,11 @@ h1{
     line-height: 140px;
     color: #ffffff13;
     width: 723px;
-    margin: 5px 0px 0px 30px;
+    margin: 20px 0px 0px 30px;
     font-weight:bolder;
 }
 .container_clases_y_programas{
-    margin: 20px 0px 0px 130px;
+    margin: 30px 0px 0px 130px;
 
 }
 
@@ -361,7 +360,6 @@ h1{
     cursor: pointer;
     position: relative;
 }
-
 .button_next:hover{
     border: 3px solid #193d0e;
 }
@@ -371,7 +369,7 @@ h1{
 
 div.carousel {
     height: 440px; 
-    margin-top: 50px;
+    margin-top: 70px;
     overflow: hidden;
     width: 100%;
     box-sizing: border-box;
@@ -434,7 +432,6 @@ div.carousel {
  
 }
 .carousel div.selected {
-
     left: 50%;
     transform: translateY(0px) translateX(-50%);
     background-color: var(--deep-purple);
@@ -453,7 +450,6 @@ div.carousel {
     left: 105%;
     transform: translateY(25%) translateX(-50%);
   }
-
 
 
 /* Fin sección clases y programas*/
@@ -483,7 +479,7 @@ div.carousel {
     font-size: var(--font-jumbo);
     line-height: 60px;
     width: 543px;
-    margin-top: 90px;
+    margin-top: 95px;
 }
 
 .container_periodo{
@@ -491,7 +487,7 @@ div.carousel {
     width: 399px;
     height: 60px;
     border-radius: 14px;
-    margin: 30px auto; 
+    margin: 40px auto; 
     background-color: var(--charcoal-gray);
     justify-content:space-around;
 }
@@ -632,7 +628,7 @@ div.carousel {
 .section_nosotros{
     display: flex;
     flex-direction: column;
-    height: 1680px;
+    height: 1378px;
     background-image: url('/assets/img/background_image/nosotros_img.png');
     align-items: center;
     background-position: center bottom; 
@@ -660,7 +656,7 @@ div.carousel {
     color: var(--forest-green);
     font-family: var(--font-outfit);
     font-size: var(--font-jumbo);
-    margin-top: 70px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -672,22 +668,21 @@ div.carousel {
     text-align: center;
     width: 924px;
     line-height: 28px;
-    font-weight: bolder;
+
 }
 
 .container_instructores{
     display: flex;
-    width: 1172px;
+    width: 950px;
     justify-content: space-around;
     margin-top: 20px; 
 }
 
 .container_instructores img{
-    width: 370px;
-    height: 520px;
+    width: 272px;
+    height: 390px;
     
 }
-
 
 .container_mision_valores_vision{
     display: flex;
@@ -717,16 +712,99 @@ div.carousel {
     font-weight: 400;
 }
 
-
-
-
-
-
 .section_estadisticas{
     display: flex;
     flex-direction: column;
     height: 768px;
-    background-image: url('/assets/img/background_image/estadisticas_img.png');
+  
 }
+
+/*Fin sección nosotros*/
+
+/*Inicio secció testimonios*/
+.section_testimonios{
+   display: flex;
+}
+
+.section_testimonios h2{
+    font-family: var(--font-urbanist);
+    font-size: 8.8rem;
+    color: #ffffff13;
+    font-weight: 900;
+    position: absolute;
+    margin-left: 30px;
+}
+
+.contanier_testimonios{
+    position: relative;
+
+}
+
+.section_testimonios h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    margin: 100px 0px 0px 90px;
+    width: 748px;
+    line-height: 60px;
+}
+
+.section_testimonios p{
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+    line-height: 28px;
+    font-weight: 400;
+    width: 588px;
+    margin: 30px 90px;
+}
+
+.carousel_redes{
+    display: flex;
+    width: 1172px;
+    height: 432px;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 0px 90px;
+}
+
+.carousel_redes div{   
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 432px;
+    background-color:#ffffff18;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+    padding: 40px 34px; 
+}
+
+
+.carousel_redes h4{
+    font-family: var(--font-outfit);
+    font-size: var(--font-small);
+    font-weight: bolder;
+}
+
+.carousel_redes p.comentario_usuario{
+    font-family: var(--font-urbanist);
+    font-size: var(--font-x-small);
+    width: 300px;
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.carousel_redes p.name_usuario{
+    font-family: var(--font-outfit);
+    font-size: var(--font-medium);
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+}
+
+.carousel_redes p.usuario_destacado{
+    font-family: var(--font-outfit);
+    font-size: var(--font-x-small);
+    margin: 0px 0px 10px 0px;
+}
+/*Fin sección testimonios*/
 
 /*Fin del main*/
