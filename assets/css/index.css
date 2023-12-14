@@ -44,6 +44,8 @@
 html{
     background-color: var(--black);
     color: #FFFFFF;
+    min-width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -57,6 +59,20 @@ ol {
 }
 
 /*Inicio del header*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--black); /* Puedes ajustar el color de fondo según tus preferencias */
+    z-index: 1000; 
+
+}
+
+body{
+    margin-top: 150px; 
+}
 
 
 .header_top{
@@ -78,6 +94,10 @@ ol {
     margin-right: 60px; 
 }
 
+.header_top_left_items:hover{
+    color: var(--forest-green);
+}
+
 .header_top_left img {
     margin-right: 5px; 
 }
@@ -86,6 +106,7 @@ ol {
     display: flex;
     margin-right: 160px;
     align-items: center;
+    transition: height 0.3s ease, width 0.3s ease;
 }
 
 .header_top_right a{
@@ -99,12 +120,18 @@ ol {
     border-radius: 20%;
 }
 
+.header_top_right a:hover{
+    height: 26px;
+    width: 26px;
+    margin-left: 2px;
+}
+
 .header_bottom{
     display: flex;
     justify-content: space-between;
     background-color: #FFFFFF;
     align-items: center;
-    height: 140px;
+    height: 100px;
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
 }
@@ -123,6 +150,12 @@ ol {
 .header_bar li{
     margin-right: 20px;
 }
+
+.header_bar li:hover{
+    font-weight: bolder;
+    
+}
+
 
 .header_bar_button{
     display: flex;
@@ -146,6 +179,11 @@ ol {
     justify-content: center;
 }
 
+.button_white:hover{
+    border: 2.2px solid var(--black); 
+    font-weight: bolder;
+}
+
 .button_green{
     display: flex;
     background-color: var(--forest-green);
@@ -157,6 +195,12 @@ ol {
     align-items: center;
     justify-content: center;
 }
+
+.button_green:hover{
+    border: 2px solid #2e6b1c; 
+    font-weight: bolder;
+}
+
 
 /*Fin del header*/
 
@@ -220,6 +264,12 @@ ol {
     justify-content: center;
     margin-right: 20px;
 }
+
+.button_conocer_mas:hover{
+    border: 2.2px solid var(--white); 
+    font-weight: bolder;
+}
+
 .button_registrarse{
     display: flex;
     background-color: var(--forest-green);
@@ -230,6 +280,11 @@ ol {
     height: 46px;
     align-items: center;
     justify-content: center;
+}
+
+.button_registrarse:hover{
+    border: 2px solid #2e6b1c; 
+    font-weight: bolder;
 }
 
 /* Fin sección hero */
@@ -254,10 +309,9 @@ h1{
     font-weight:bolder;
 }
 .container_clases_y_programas{
-    margin: 85px 0px 0px 130px;
+    margin: 20px 0px 0px 130px;
 
 }
-
 
 .container_clases_y_programas h3{
     color: var(--forest-green);
@@ -277,6 +331,130 @@ h1{
     margin-top: 25px;
     font-weight: 400;
 }
+
+.buttons_slider{
+    position: relative;
+    top: 220px;
+    left: calc(100% - 172px);
+    width: 172px; 
+}
+
+.button_prev{
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    background-color: #ffffff00;
+    cursor: pointer;
+    position: relative;
+    margin: 10px;
+}
+.button_prev:hover{
+    border: 3px solid var(--white);
+}
+.button_next {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: var(--forest-green);
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.button_next:hover{
+    border: 3px solid #193d0e;
+}
+
+/*Inicio slider*/
+/* Estilo base del slider */
+
+div.carousel {
+    height: 440px; 
+    margin-top: 50px;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+/* Estilo de la lista de elementos del slider */
+
+/* Estilo de cada elemento del slider */
+.carousel div {
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+    height: 266px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius:10px;
+    border: 1px solid var(--white); 
+    flex: 0 0 auto;
+    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+    padding: 40px 30px;
+    position: absolute;
+}
+
+/* Estilo para las imágenes en el slider */
+.carousel img {
+    max-width: 32px;
+    max-height: 32px;
+
+}
+
+/* Estilo para el contenido del slider (puedes personalizar según tus necesidades) */
+
+.carousel h4{
+    font-family: var(--font-outfit);
+    font-size: var(--font-xsmall);
+    line-height: 26px;
+    margin: 10px 0px;
+}
+
+.carousel p{
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xxsmall);
+    line-height: 24px;
+    font-weight: lighter;
+    margin: 10px auto;
+}
+
+
+.carousel div.prevLeftSecond {
+    
+    left: -5%;
+    transform: translateY(25%) translateX(-50%);
+    opacity: 0.7;
+  }
+
+.carousel div.Prevleft {
+   
+    left: 17%;
+    transform: translateY(25%) translateX(-50%);
+ 
+}
+.carousel div.selected {
+
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+    background-color: var(--deep-purple);
+    width: 572px;
+    height: 408px;
+}
+
+.carousel div.nextRight {
+    
+    left: 83%;
+    transform: translateY(25%) translateX(-50%);
+  }
+
+  .carousel div.nextRightSecond {
+
+    left: 105%;
+    transform: translateY(25%) translateX(-50%);
+  }
+
+
 
 /* Fin sección clases y programas*/
 
@@ -308,6 +486,143 @@ h1{
     margin-top: 90px;
 }
 
+.container_periodo{
+    display: flex;
+    width: 399px;
+    height: 60px;
+    border-radius: 14px;
+    margin: 30px auto; 
+    background-color: var(--charcoal-gray);
+    justify-content:space-around;
+}
+.periodo-btn {
+    width: 120px;
+    height: 44px;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    align-self: center;
+    background-color: #00000000;
+    line-height: 40px;
+    font-family: var(--font-outfit);
+    font-size:var(--font-xxsmall);
+}
+
+
+.periodo-btn:hover{
+    border: 2px solid var(--deep-purple);
+}
+
+
+#periodo_select {
+    background-color: var(--deep-purple);
+}
+
+.programas{
+    display: flex;
+    width: 1172px;
+    height: 600px;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+.programas>div{
+    display: flex;
+    flex-direction: column;
+    width: 372px;
+    height: 498px;
+    background-color: var(--charcoal-gray);
+    border-radius: 16px;
+    padding: 24px 28px;
+}
+
+.programas div h4{
+    font-family: var(--font-outfit);
+    font-size: var(--font-xxsmall);
+    color: var(--forest-green);
+}
+
+.programas div p.precio{
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    color: var(--white);
+    margin-top: 10px;
+}
+
+.programas div p.mensualmente{
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xxsmall);
+    color: #878787;
+    font-weight: lighter;
+    margin-bottom: 15px;
+}
+
+.programas div li{
+    display: flex;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xxsmall);
+    color: #E1E1E1;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+.programas div li img{
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.container_programa{
+    width: 308px;
+    height: 358px;
+    margin: 15px 10px 0pc;
+}
+
+
+.programas div button{
+    width: 224px;
+    height: 54px;
+    align-self: center;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--white);
+    font-family: var(--font-outfit);
+    font-size: var(--font-xxsmall);
+    cursor: pointer;
+}
+
+#programa_select{
+    background-color: var(--deep-purple);
+    height: 600px;
+}
+
+.programas div button:hover{
+    border-color: var(--deep-purple);
+    font-weight: bolder;
+}
+
+#programa_select h4{
+    color: var(--white);
+    margin-top: 30px;
+}
+
+#programa_select p.mensualmente{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+#programa_select li{
+    font-size: var(--font-xsmall);
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#programa_select button{
+    margin-top: 60px;
+}
 
 
 /*Fin sección membresías */
