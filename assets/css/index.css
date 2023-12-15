@@ -24,6 +24,7 @@
     /* Font-sizes */
     --font-display: 6rem;
     --font-jumbo: 4.5rem;
+    --font-semi-large:3.5rem;
     --font-large: 2.5rem;
     --font-medium: 2rem;
     --font-small: 1.5rem;
@@ -149,9 +150,9 @@ body{
 }
 
 .header_bar li:hover{
-    font-weight: bolder;
-    
+    text-decoration: underline;
 }
+
 
 
 .header_bar_button{
@@ -177,8 +178,7 @@ body{
 }
 
 .button_white:hover{
-    border: 2.2px solid var(--black); 
-    font-weight: bolder;
+    box-shadow: 0.1px 0px 5px 0.5px rgba(0, 0, 0, 0.466); 
 }
 
 .button_green{
@@ -194,8 +194,8 @@ body{
 }
 
 .button_green:hover{
-    border: 2px solid #2e6b1c; 
-    font-weight: bolder;
+    box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
+
 }
 /*Fin del header*/
 
@@ -215,8 +215,7 @@ body{
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('/assets/img/background_image/hero_img.png');
-    background-position: bottom;
-    background-size:cover;
+    box-shadow: 50px 10px 40px 70px rgb(0, 0, 0) inset;
     background-repeat: no-repeat;
 }
 
@@ -249,7 +248,7 @@ body{
     display: flex;
     margin: 30px 150px 0px 0px;
     font-family: var(--font-outfit);
-    font-size: var(--font-xsmall);
+    font-size: var(--font-xxsmall);
 }
 
 .button_conocer_mas{
@@ -264,8 +263,7 @@ body{
 }
 
 .button_conocer_mas:hover{
-    border: 2.2px solid var(--white); 
-    font-weight: bolder;
+    box-shadow: 0.1px 0px 5px 0.5px rgba(255, 255, 255, 0.277); 
 }
 
 .button_registrarse{
@@ -281,8 +279,7 @@ body{
 }
 
 .button_registrarse:hover{
-    border: 2px solid #2e6b1c; 
-    font-weight: bolder;
+    box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
 }
 
 /* Fin sección hero */
@@ -349,7 +346,7 @@ h1{
     margin: 10px;
 }
 .button_prev:hover{
-    border: 3px solid var(--white);
+    box-shadow: 0.3px 1px 10px 1px rgba(255, 255, 255, 0.253); 
 }
 .button_next {
     width: 52px;
@@ -361,7 +358,7 @@ h1{
     position: relative;
 }
 .button_next:hover{
-    border: 3px solid #193d0e;
+    box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
 }
 
 /*Inicio slider*/
@@ -464,7 +461,6 @@ div.carousel {
     background-color: #090707;
 }
 
-
 .section_membresías h2{
     font-family: var(--font-urbanist);
     font-size: 8.8rem;
@@ -505,8 +501,6 @@ div.carousel {
     font-family: var(--font-outfit);
     font-size:var(--font-xxsmall);
 }
-
-
 .periodo-btn:hover{
     border: 2px solid var(--deep-purple);
 }
@@ -528,8 +522,8 @@ div.carousel {
 .programas>div{
     display: flex;
     flex-direction: column;
-    width: 372px;
-    height: 498px;
+    width: 310px;
+    height: 460px;
     background-color: var(--charcoal-gray);
     border-radius: 16px;
     padding: 24px 28px;
@@ -543,7 +537,7 @@ div.carousel {
 
 .programas div p.precio{
     font-family: var(--font-outfit);
-    font-size: var(--font-jumbo);
+    font-size: var(--font-semi-large);
     color: var(--white);
     margin-top: 10px;
 }
@@ -572,8 +566,8 @@ div.carousel {
 
 .container_programa{
     width: 308px;
-    height: 358px;
-    margin: 15px 10px 0pc;
+    height: 330px;
+    margin: 15px 10px 0px;
 }
 
 
@@ -592,7 +586,9 @@ div.carousel {
 
 #programa_select{
     background-color: var(--deep-purple);
-    height: 600px;
+    width: 335px;
+    height: 480px;
+    padding: 15px 25px;
 }
 
 .programas div button:hover{
@@ -602,7 +598,7 @@ div.carousel {
 
 #programa_select h4{
     color: var(--white);
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 #programa_select p.mensualmente{
@@ -612,12 +608,10 @@ div.carousel {
 
 #programa_select li{
     font-size: var(--font-xsmall);
-    font-weight: 500;
     margin-top: 15px;
 }
-
 #programa_select button{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 
