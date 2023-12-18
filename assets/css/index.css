@@ -706,12 +706,7 @@ div.carousel {
     font-weight: 400;
 }
 
-.section_estadisticas{
-    display: flex;
-    flex-direction: column;
-    height: 768px;
-  
-}
+
 
 /*Fin sección nosotros*/
 
@@ -800,5 +795,376 @@ div.carousel {
     margin: 0px 0px 10px 0px;
 }
 /*Fin sección testimonios*/
+
+
+/*Inicio sección estadísticas*/
+.section_estadisticas {
+    display: flex;
+    flex-direction: column;
+    height: 804px;
+    align-items: center;
+}
+
+.header_estadisticas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.header_estadisticas h2{
+    font-family: var(--font-urbanist);
+    font-size: 8.8rem;
+    color: #ffffff13;
+    font-weight: 900;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.header_estadisticas h3{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-jumbo);
+    text-align: center;
+    top: 120px;
+    position: relative;
+    
+}
+
+.header_estadisticas p{
+    position: relative;
+    color: var(--white);
+    font-family: var(--font-urbanist);
+    font-size: var(--font-xsmall);
+    margin: 130px 0px 30px;
+    text-align: center;
+    width: 924px;
+    line-height: 28px;
+}
+
+.container_cajas{
+    display: flex;
+    margin: 0px 130px;
+}
+.cajas {
+    display: flex;
+    flex-wrap:wrap;
+    width: 50%;
+    height: 476px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.img_cajas{
+    background-image: url(/assets/img/background_image/estadisticas.png);
+    width: 50%;
+    height: 476px;
+}
+
+.cajas h4{
+  
+    font-family: var(--font-outfit);
+    font-size: var(--font-large);
+    text-align: center;
+}
+
+.cajas h5{
+  
+    margin-top: 18px;
+    font-family: var(--font-outfit);
+    font-size: var(--font-x-small);
+    text-align: center;
+}
+
+.cajas p{
+    margin-top: 15px;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-x-small);
+    text-align: center;
+}
+
+.cuadro1{
+    height: 158px;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.cuadro2{
+    height: 158px;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.cuadro3{
+    height: 158px;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.cuadro4{
+    height: 158px;
+    width: 50%;
+    padding-left: 10px;
+}
+/*Fin sección estadísticas*/
+
+
+
+.contacto{
+    display: flex;
+    background-image: url(/assets/img/background_image/contacto_img.png);
+    margin-top: 100px;
+}
+
+.contanier_formulario{
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 930px;
+    margin-left: 130px;
+}
+
+
+.contacto h3 {
+    color: #7C9CBF;
+    font-size: var(--font-jumbo);
+    font-family: var(--font-outfit);
+    line-height: 60px;
+    
+    }
+
+
+
+.contacto p {
+    font-family: var(--font-urbanist);
+    margin: 20px 0px 20px 0px;
+
+
+}
+
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formulario label{
+    font-family: var(--font-outfit);
+    color: #7C9CBF;
+    margin: 30px 0px 10px 0px;
+    font-size: var(--font-xsmall);
+}
+
+.formulario input{
+    width: 100%;
+    height: 48px;
+    border-radius: 4px;
+    background:var(--charcoal-gray);
+    border: none;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-x-small);
+    padding: 10px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 174px;
+    border-radius: 4px;
+    background:var(--charcoal-gray);
+    border: none;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-x-small);
+    padding: 10px;
+}
+
+
+
+
+input.button_form {
+    background-color: #7C9CBF;
+    width:372px ;
+    height: 46px;
+    color: var(--charcoal-gray);
+    font-family: var(--font-outfit);
+    font-size: var(--font-x-small);
+    align-self: center;
+    margin-top: 30px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.button_form:hover {
+    box-shadow: 0.2px 0px 7px 1px var(--charcoal-gray); 
+}
+
+
+.datos_de_contacto{
+    width: 472px;
+    background: rgba(29, 34, 41, 0.8);
+    height: 412px;
+    border-radius: 4%;
+    margin: 170px auto;
+}
+
+
+.datos_de_contacto h3{
+    color: #7C9CBF;
+    font-family: var(--font-outfit);
+    font-size: var(--font-large);
+    margin: 40px 40px 20px 40px;
+}
+
+
+.datos {
+    margin: 10px 40px;
+    list-style: none;
+}
+
+.datos li {
+    margin-bottom: 20px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-family: var(--font-urbanist);
+    font-size: var(--font-small);
+
+}
+
+
+.datos li div{
+    background-color: var(--black);
+    width: 52px;
+    height: 52px;
+    
+}
+
+.datos li img{
+margin-right: 20px;
+
+    
+}
+
+
+footer {
+    display: flex;
+	background-color: var(--charcoal-gray);
+	height: 412px;
+    padding: 60px;
+}
+
+.logo-details{
+    display: flex;
+    flex-direction: row;
+    width: 772px;
+    margin-left: 20px;
+}
+
+
+.logo-details .logo_name1{
+	color: var(--forest-green);
+    font-size: var(--font-jumbo);
+	font-family:var(--font-outfit);
+	margin: 20px 0px 0px 0px;
+  
+}
+
+.logo-details div{
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 28px 10px;
+}
+
+.logo-details .logo_name2{
+	font-family:var(--font-outfit);
+	font-size: 15px;
+    line-height: 26px;
+    text-align: left;
+    width: 25%;
+    margin: 40px 0px 0px 10px;
+}
+
+
+
+
+.media-icons {
+	display: flex;
+	margin-top: 80px;
+	width: 272px;
+    margin-left: 20px;
+}
+
+.media-icons p{
+    font-family:var(--font-outfit);
+	font-size: 15px;
+    margin-right: 20px;
+}
+
+.media-icons a {
+    display: flex;
+	height: 36px;
+	width: 36px;
+	margin: auto 10px;
+	border-radius: 8px;
+    background-color: var(--black);
+}
+
+
+.media-icons img{
+    display: flex;
+    margin: auto;
+
+}
+
+
+.nav_footer {
+	display: flex;
+    width: 272px;
+    height: 148px;
+    margin-left: 50px;
+}
+
+.services{
+    width: 99px;
+}
+
+.links{
+    width: 167px;
+}
+
+.nav_footer h4{
+    font-family: var(--font-outfit);
+    margin: 30px 0px 20px 0px;
+    color: var(--forest-green);
+}
+
+.nav_footer p{
+    font-family: var(--font-urbanist);
+    margin-bottom: 15px;
+}
+
+hr {
+    display: flex;
+    color: #ffffff; 
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 5%;
+  }
+
+.copyright{
+    width: 100%;
+    position: absolute;
+    margin-top: 280px;
+    text-align: center;
+    font-family: var(--font-urbanist);
+}
+
+
+
 
 /*Fin del main*/
