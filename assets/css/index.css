@@ -1,203 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@400;500&display=swap');
-
-:root {
-    /* Typography */
-    --font-comforter: 'Comforter', sans-serif;
-    --font-dm-sans: 'DM Sans', sans-serif;
-    --font-lato: 'Lato', sans-serif;
-    --font-outfit: 'Outfit', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
-    --font-urbanist: 'Urbanist', sans-serif;
-  
-    /* Palette */
-    --forest-green: #489F31;
-    --deep-purple: #75419E;
-    --charcoal-gray: #1D2229 ;
-    --black: #000000;
-    --white: #FFFFFF;
-    --deep-red: #C51F1F;
-    --deep-orange: #DB681C;
-    --emerald-green: #2DA44E;
-   
-  
-    /* Font-sizes */
-    --font-display: 6rem;
-    --font-jumbo: 4.5rem;
-    --font-semi-large:3.5rem;
-    --font-large: 2.5rem;
-    --font-medium: 2rem;
-    --font-small: 1.5rem;
-    --font-xsmall: 1.25rem;
-    --font-xxsmall: 1rem;
-  
-  }
-
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-    color: var(--white);
-    overflow-x: hidden;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-/*Inicio del header*/
-
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--black);
-    z-index: 1000; 
-}
-
-body{
-    margin-top: 80px;
-    background-color: var(--black); 
-}
-
-.header_top{
-    display: flex;
-    justify-content: space-between;
-    height: 52px;
-}
-
-.header_top_left{
-    display: flex;
-    font-family: var(--font-urbanist);
-    font-size: var(--font-xxsmall);
-    align-items: center;
-    margin-left: 160px;
-}
-
-.header_top_left a {
-    display: flex;
-    margin-right: 60px; 
-}
-
-.header_top_left_items:hover{
-    color: var(--forest-green);
-}
-
-.header_top_left img {
-    margin-right: 5px; 
-}
-
-.header_top_right{
-    display: flex;
-    margin-right: 160px;
-    align-items: center;
-    transition: height 0.3s ease, width 0.3s ease;
-}
-
-.header_top_right a{
-    display: flex;
-    margin-right: 15px;
-    height: 28px;
-    width: 28px;
-    background-color: var(--charcoal-gray);
-    align-items: center;
-    justify-content: center;
-    border-radius: 20%;
-}
-
-.header_top_right a:hover{
-    height: 26px;
-    width: 26px;
-    margin-left: 2px;
-}
-
-.header_bottom{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFFFFF;
-    align-items: center;
-    height: 100px;
-    font-family: var(--font-urbanist);
-    font-size: var(--font-xsmall);
-}
-
-.header_bottom img{
-    height: 55px;
-    margin-left: 130px;
-}
-
-.header_bar{
-    display: flex;
-    color: var(--black);
-    margin-left: 140px;
-}
-
-.header_bar li{
-    margin-right: 20px;
-}
-
-.header_bar li:hover{
-    text-decoration: underline;
-}
-
-
-
-.header_bar_button{
-    display: flex;
-    font-family: var(--font-outfit);
-    color: var(--black);
-    margin-right: 130px;
-}
-
-.header_bar_button li{
-    margin-right: 20px;
-    font-size: var(--font-xxsmall);
-}
-
-.button_white{
-    display: flex;
-    border: 1px solid var(--black); 
-    border-radius: 4px;
-    width: 108px;
-    height: 46px;
-    align-items: center;
-    justify-content: center;
-}
-
-.button_white:hover{
-    box-shadow: 0.1px 0px 5px 0.5px rgba(0, 0, 0, 0.466); 
-}
-
-.button_green{
-    display: flex;
-    background-color: var(--forest-green);
-    color: var(--white);
-    padding: 16px;
-    border-radius: 4px;
-    width: 134px;
-    height: 46px;
-    align-items: center;
-    justify-content: center;
-}
-
-.button_green:hover{
-    box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
-
-}
-/*Fin del header*/
 
 /*----------------------------------Inicio del main--------------------------------------*/
 
@@ -288,10 +88,12 @@ body{
 /* Inicio sección clases y programas*/
 .section_clases_y_programas{
     display: flex;
-    flex-direction: column;
-    height: 1058px;
+    flex-direction: row;
+    height: 500px;
     background-image: url('/assets/img/background_image/clases_img.png');
     background-size: cover;
+    margin-top: 40px;
+    box-shadow: 50px 10px 40px 70px rgb(0, 0, 0) inset;
 }
 
 h1{
@@ -301,11 +103,11 @@ h1{
     line-height: 140px;
     color: #ffffff13;
     width: 723px;
-    margin: 20px 0px 0px 30px;
+    margin: 20px 0px 0px 50px;
     font-weight:bolder;
 }
 .container_clases_y_programas{
-    margin: 30px 0px 0px 130px;
+    margin: 70px 0px 0px 130px;
 
 }
 
@@ -328,11 +130,13 @@ h1{
     font-weight: 400;
 }
 
-.buttons_slider{
-    position: relative;
-    top: 220px;
-    left: calc(100% - 172px);
-    width: 172px; 
+.slider{
+    display: flex;
+    width: 572px; 
+    height: 336px;
+    margin-right: 130px;
+    justify-content: center;
+    align-items: center;
 }
 
 .button_prev{
@@ -342,8 +146,6 @@ h1{
     border: 1px solid var(--white);
     background-color: #ffffff00;
     cursor: pointer;
-    position: relative;
-    margin: 10px;
 }
 .button_prev:hover{
     box-shadow: 0.3px 1px 10px 1px rgba(255, 255, 255, 0.253); 
@@ -355,7 +157,6 @@ h1{
     background-color: var(--forest-green);
     border: none;
     cursor: pointer;
-    position: relative;
 }
 .button_next:hover{
     box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
@@ -364,89 +165,45 @@ h1{
 /*Inicio slider*/
 /* Estilo base del slider */
 
-div.carousel {
-    height: 440px; 
-    margin-top: 70px;
-    overflow: hidden;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
 /* Estilo de la lista de elementos del slider */
 
 /* Estilo de cada elemento del slider */
-.carousel div {
-    display: flex;
-    flex-direction: column;
-    width: 272px;
-    height: 266px;
-    background-color: var(--black);
-    color: var(--white);
-    border-radius:10px;
-    border: 1px solid var(--white); 
-    flex: 0 0 auto;
-    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
-    padding: 40px 30px;
-    position: absolute;
-}
 
 /* Estilo para las imágenes en el slider */
-.carousel img {
-    max-width: 32px;
-    max-height: 32px;
-
+.select img {
+    max-width: 64px;
+    max-height: 64px;
+    margin-right: 20px;
 }
 
 /* Estilo para el contenido del slider (puedes personalizar según tus necesidades) */
 
-.carousel h4{
-    font-family: var(--font-outfit);
-    font-size: var(--font-xsmall);
-    line-height: 26px;
-    margin: 10px 0px;
+.select{
+    background-color: #76419eb4;
+    width: 350px;
+    height: 336px;
+    margin: 0px 30px;
+    border-radius: 4%;
 }
 
-.carousel p{
+
+.select h4{
+    display: flex;
+    font-family: var(--font-outfit);
+    font-size: var(--font-small);
+    margin: 20px;
+    align-items: center;
+}
+
+.select p{
     font-family: var(--font-urbanist);
     font-size: var(--font-xxsmall);
-    line-height: 24px;
+    line-height: 32px;
     font-weight: lighter;
-    margin: 10px auto;
-}
-
-
-.carousel div.prevLeftSecond {
-    
-    left: -5%;
-    transform: translateY(25%) translateX(-50%);
-    opacity: 0.7;
-  }
-
-.carousel div.Prevleft {
+    margin: 10px 30px;
    
-    left: 17%;
-    transform: translateY(25%) translateX(-50%);
- 
-}
-.carousel div.selected {
-    left: 50%;
-    transform: translateY(0px) translateX(-50%);
-    background-color: var(--deep-purple);
-    width: 572px;
-    height: 408px;
 }
 
-.carousel div.nextRight {
-    
-    left: 83%;
-    transform: translateY(25%) translateX(-50%);
-  }
-
-  .carousel div.nextRightSecond {
-
-    left: 105%;
-    transform: translateY(25%) translateX(-50%);
-  }
 
 
 /* Fin sección clases y programas*/

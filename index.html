@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
 
     <title>R&M GYM</title>
 </head>
@@ -15,7 +16,7 @@
         <nav>
             <div class="header_top">
                 <ul class="header_top_left">
-                    <li class="header_top_left_items"><a href="" target="_blank"><img
+                    <li class="header_top_left_items"><a href="#contacto"><img
                                 src="/assets/img/logos/logo_email.png" alt="logo del email">contacto@r&mgym.com</a></li>
                     <li class="header_top_left_items"><a
                             href="https://api.whatsapp.com/send?phone=542213144442&text=Hola!" target="_blank"><img
@@ -26,23 +27,23 @@
                                 src="/assets/img/logos/logo_facebook.png" alt="Icono de Facebook"></a></li>
                     <li><a href="https://www.instagram.com/thewallgym/" target="_blank"><img
                                 src="/assets/img/logos/logo_instagram.png" alt="Icono de Instagram"></a></li>
-                    <li><a href=""><img src="assets/img/logos/logo_youtube.png" alt="Icono de YouTube"></a></li>
+                    <li><a href=""><img src="/assets/img/logos/logo_youtube.png" alt="Icono de YouTube"></a></li>
                 </ul>
             </div>
             <div class="header_bottom">
                 <picture class="logo_gym_content">
-                    <a href="">
+                    <a href="/index.html">
                         <img src="/assets/img/logos/logo_r&m_gym.png" alt="Logo R&M GYM">
                     </a>
                 </picture>
                 <ul class="header_bar">
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="/index.html" class="header_bar_select">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#precios">Precios</a></li>
                 </ul>
                 <ul class="header_bar_button">
-                    <li><a href="" class="button_white">Contacto</a></li>
-                    <li><a href="" class="button_green">Registrarme</a></li>
+                    <li><a href="#contacto" class="button_white">Contacto</a></li>
+                    <li><a href="/views/registro.html" class="button_green">Registrarme</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,55 +64,36 @@
             </div>
         </section> <!--Fin section_inicio-->
         <section class="section_clases_y_programas"> <!--Inicio section_clases_y_programas-->
-            <div class="buttons_slider">
-                <button class="button_prev" role="button" id="prevBtn"><img
-                        src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
-                <button class="button_next" role="button" id="nextBtn"><img
-                        src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
-            </div>
-            <h1>Clases y programas</h1>
+            <h1>Clases</h1>
             <article class="container_clases_y_programas">
-                <h3>Clases y programas de entrenamiento</h3>
-                <p>Conoce nuestras clases y programas y elegí el que más se adapte a tus objetivos. No lo dudes.</p>
+                <h3>Clases</h3>
+                <p>Conoce nuestras clases y disciplinas y elegí el que más se adapte a tus objetivos. No lo dudes.</p>
                 <ul class="ul_buttons">
                     <li><a href="" class="button_conocer_mas">Más info</a></li>
                     <li><a href="" class="button_registrarse">Registrarme</a></li>
                 </ul>
-
             </article>
 
-            <div id="carousel" class="carousel">
-                <div id='item_1' class="prevLeftSecond">
-                    <img src="/assets/img/logos/Icon.png" alt="icono de clases">
-                    <h4>Header 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                        viverra.</p>
+            <div class="slider">
+                <button class="button_prev" role="button" id="prevBtn"><img
+                        src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
+
+                <div id='select' class="select">
+
+                    <h4><img src="/assets/img/logos/Icon.png" alt="icono de clases">Header</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium viverra.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium. Ut nunc a
+                        pretium viverra.</p>
                 </div>
-                <div id='item_2' class="Prevleft">
-                    <img src="/assets/img/logos/Icon.png" alt="icono de clases">
-                    <h4>Header 2</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                        viverra.</p>
-                </div>
-                <div id='item_3' class="selected">
-                    <img src="/assets/img/logos/Icon.png" alt="icono de clases">
-                    <h4>Header 3</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                        viverra.</p>
-                </div>
-                <div id='item_4' class="nextRight">
-                    <img src="/assets/img/logos/Icon.png" alt="icono de clases">
-                    <h4>Header 4</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                        viverra.</p>
-                </div>
-                <div id='item_5' class="nextRightSecond">
-                    <img src="/assets/img/logos/Icon.png" alt="icono de clases">
-                    <h4>Header 5</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                        viverra.</p>
-                </div>
+
+                <button class="button_next" role="button" id="nextBtn"><img
+                        src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
             </div>
+        
+            
+
+
+
         </section> <!--Fin section_clases_y_programas-->
         <section class="section_membresías" id="precios"> <!--Inicio section_membresías-->
             <h2>Membresías</h2>
@@ -323,7 +305,7 @@
         </section>
 
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <div class="contanier_formulario">
                 <h3>Contáctate con nosotros </h3>
                 <p>Si tienes alguna duda o inquietud, envíanos un mensaje o llámanos. Recuerda, los horarios para
@@ -363,16 +345,16 @@
             </div>
             <div class="media-icons">
                 <p>Síguenos</p>
-                <a href="#" class="fab fa-facebook-f"><img src="/assets/img/logos/logo_facebook.png" alt=""></a>
+                <a href="https://www.facebook.com/thewallgymLP" class="fab fa-facebook-f"><img src="/assets/img/logos/logo_facebook.png" alt=""></a>
                 <a href="#" class="fab fa-twitter"><img src="/assets/img/logos/logo_instagram.png" alt=""></a>
-                <a href="#" class="fab fa-instagram"><img src="/assets/img/logos/logo_youtube.png" alt=""></a>
+                <a href="https://www.instagram.com/thewallgym/"" class="fab fa-instagram"><img src="/assets/img/logos/logo_youtube.png" alt=""></a>
             </div>
         </div>
         <div class="nav_footer">
             <div class="services">
                 <h4>Empresa</h4>
-                <p><a href="#">Nosotros</a></p>
-                <p><a href="#">Contacto</a></p>
+                <p><a href="#nosotros">Nosotros</a></p>
+                <p><a href="#contacto">Contacto</a></p>
                 <p><a href="#">Sucursales</a></p>
             </div>
             <div class="links">

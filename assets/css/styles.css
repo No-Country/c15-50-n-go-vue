@@ -1,64 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@400;500&display=swap');
+
+:root {
+    /* Typography */
+    --font-comforter: 'Comforter', sans-serif;
+    --font-dm-sans: 'DM Sans', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-urbanist: 'Urbanist', sans-serif;
+  
+    /* Palette */
+    --forest-green: #489F31;
+    --deep-purple: #75419E;
+    --charcoal-gray: #1D2229 ;
+    --black: #000000;
+    --white: #FFFFFF;
+    --deep-red: #C51F1F;
+    --deep-orange: #DB681C;
+    --emerald-green: #2DA44E;
+   
+  
+    /* Font-sizes */
+    --font-display: 6rem;
+    --font-jumbo: 4.5rem;
+    --font-semi-large:3.5rem;
+    --font-large: 2.5rem;
+    --font-medium: 2rem;
+    --font-small: 1.5rem;
+    --font-xsmall: 1.25rem;
+    --font-xxsmall: 1rem;
+  
+  }
 
 
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+html{
+    color: var(--white);
+    overflow-x: hidden;
+   
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 main{
     display: flex;
+    flex-direction: row;
+    background-image: url(/assets/img/background_image/background_register.png);
+    max-width: 100%;
+    height: 100vh;
     justify-content: space-around;
+    padding: 120px 100px;
 }
 
-body{
-    background-color:darkcyan;
-}
 
 .titleContent{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 472px;
+    height: 255px;
+    align-self: center;
+
 }
 
+
+
 .title{
-    color: rgb(0, 0, 0);
-    font-size: 4rem;
-    margin: 10%;
+    color: var(--white);
+    font-size: var(--font-jumbo);
+    font-family: var(--font-outfit);
+    position: initial;
+    margin: 0px 0px 0px 30px ;
+ 
 }
+
+.titleContent p{
+    font-family: var(--font-urbanist);
+    line-height: 24px;
+    margin: 0;
+    padding: 0px 30px;
+}
+
 span{
     color: white;
     
 }
 
-.formContent {
-    color: rgb(254, 253, 253);
-    width: 50%;
-    height: 350px;
+.formContentLogin, .formContentRegistro {
     display: flex;
+    flex-direction: column;
+    color: rgb(254, 253, 253);
+    background-color: #1d2229bc;
+    width: 372px;
+    height: auto;
+    border-radius: 15px;
+    align-items: center;
+    margin: 0px 0px;
+    padding-top: 40px;
+}
+
+.formContentRegistro {
+    height: 560px;
+}
+
+.formContentLogin ul,.formContentRegistro ul{
+    display: flex;
+    list-style: none;
+    font-family: var(--font-outfit);
+    color: #7C9CBF;
+}
+
+.formContentLogin li,.formContentRegistro li{
+    margin: 0px 20px 20px;
+  
+}
+
+.formContentLogin li:hover,.formContentRegistro li:hover{
+    text-decoration: underline;
+  
+}
+
+.select_option{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.formContentLogin h2,.formContentRegistro h2{
+    color: var(--forest-green);
+    font-family: var(--font-outfit);
+    font-size: var(--font-medium);
+    margin-bottom: 5px;
+}
+
+.formContentLogin p, .formContentRegistro p{
+    font-family: var(--font-urbanist);
+    margin-bottom: 20px;
+    color: #ffffffa6;
 }
 
 #loginForm{
-    width: 70%;
-    background-color: rgba(0, 0, 0, 0.364);
-    margin: 30px auto;
-    height: 100%;
     display: flex;
+    width: 80%;
     flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    align-content: center;
-}
-
-h2{
-    margin-top: 60px;
-    color: black;
-}
-
-#email, #password {
-    margin: 10px auto 0px;   
+    padding: 0px 10px;
+    font-family: var(--font-outfit);
+    font-size: var(--font-xxsmall);
+    color: #ffffffa6;
     
 }
 
+
+#name, #email, #password, #password_confirm {
+    margin: 5px 0px 10px;  
+    width: 100%;
+    height: 35px; 
+    padding-left: 10px;
+    color: #03030315;
+    border-radius: 4px;
+}
+
 .button{
-    margin: 20px 0px 40px;
+    margin: 15px 0px 40px;
+    border-radius: 4px;
+    width: 100%;
+    height: 40px; 
+    background-color: var(--forest-green);
+    color: var(--white);
+    font-family: var(--font-outfit);
+    font-size: var(--font-xxsmall);
 }
 
 .error {
@@ -66,7 +185,6 @@ h2{
     font-weight: 200;
     font-size: 1em;
     background-color: rgb(1, 1, 1);
-    width: 100%;
     text-align: center;
 }
 

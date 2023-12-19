@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/header.css">
-    <title>Login</title>
+    <title>Registro</title>
 </head>
 
 <body>
@@ -48,32 +48,35 @@
         </nav>
     </header> <!--Fin Header-->
     <main>
-
         <div class="titleContent">
             <h1 class="title">Título</h1>
             <p>Lorem ipsum dolor sit amet consectetur eget maecenas sapien fusce egestas risus purus suspendisse turpis
                 volutpat onare imperdiet bibendum eleifend quam feugiat sit semper fames id diam diam nisi mauris netus
                 facilisi semper elementum quis turpis dui viverra nisl.</p>
         </div>
-        <div class="formContentLogin">
+        <div class="formContentRegistro">
             <nav>
                 <ul>
-                    <li><a href="/views/login.html" class="select_option">Iniciar sesión</a></li>
-                    <li><a href="/views/registro.html">Crear cuenta</a></li>
+                    <li><a href="/views/login.html" >Iniciar sesión</a></li>
+                    <li><a href="" class="select_option">Crear cuenta</a></li>
                 </ul>
             </nav>
 
-            <h2>¡Hola, otra vez!</h2>
-            <P>Ingresa con tus datos de registro</P>
+            <h2>Hazte miembro de R&M</h2>
+            <P>Registrate con tu correo electrónico</P>
 
             <form id="loginForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
                 <label for="email">Correo electrónico</label>
                 <input type="text" id="email" name="email" placeholder="Escribe tu correo electrónico">
                 <span id="emailError" class="error"></span>
                 <label for="password">Contraseña</label>
                 <input type="password" id="password" name="password" placeholder="Escribe tu contraseña">
+                <label for="password_confirm">Confirmar contraseña</label>
+                <input type="password_confirm" id="password_confirm" name="password_confirm" placeholder="Escribe tu contraseña nuevamente">
                 <span id="passwordError" class="error"></span>
-                <button type="submit" value="Crear cuenta" class="button" disabled>Iniciar sesión</button>
+                <button type="submit" value="Crear cuenta" class="button" disabled>Crear cuenta</button>
             </form>
         </div>
     </main>
