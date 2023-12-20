@@ -154,6 +154,12 @@ body{
     font-weight: bolder;
 }
 
+nav a.active {
+    color: yellow; /* Puedes ajustar el color según tus preferencias */
+    font-weight: bold;
+  }
+
+
 .header_bar_select{
     text-decoration: underline;
     font-weight: bolder;

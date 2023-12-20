@@ -162,14 +162,6 @@ h1{
     box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
 }
 
-/*Inicio slider*/
-/* Estilo base del slider */
-
-/* Estilo de la lista de elementos del slider */
-
-/* Estilo de cada elemento del slider */
-
-/* Estilo para las imágenes en el slider */
 .select img {
     max-width: 64px;
     max-height: 64px;
@@ -179,7 +171,7 @@ h1{
 /* Estilo para el contenido del slider (puedes personalizar según tus necesidades) */
 
 .select{
-    background-color: #76419eb4;
+    background-color: #824ea994;
     width: 350px;
     height: 336px;
     margin: 0px 30px;
@@ -213,7 +205,7 @@ h1{
 .section_membresías{
     display: flex;
     flex-direction: column;
-    height: 952px;
+    height: 800px;
     align-items: center;
     background-color: #090707;
 }
@@ -240,7 +232,7 @@ h1{
     width: 399px;
     height: 60px;
     border-radius: 14px;
-    margin: 40px auto; 
+    margin: 30px auto 40px; 
     background-color: var(--charcoal-gray);
     justify-content:space-around;
 }
@@ -262,15 +254,14 @@ h1{
     border: 2px solid var(--deep-purple);
 }
 
-
 #periodo_select {
     background-color: var(--deep-purple);
 }
 
 .programas{
     display: flex;
-    width: 1172px;
-    height: 600px;
+    width: 1000px;
+    height: auto;
     align-items: center;
     justify-content:space-around;
     
@@ -279,11 +270,11 @@ h1{
 .programas>div{
     display: flex;
     flex-direction: column;
-    width: 310px;
-    height: 460px;
+    width: 290px;
+    height: 400px;
     background-color: var(--charcoal-gray);
     border-radius: 16px;
-    padding: 24px 28px;
+    padding: 20px 28px;
 }
 
 .programas div h4{
@@ -294,7 +285,7 @@ h1{
 
 .programas div p.precio{
     font-family: var(--font-outfit);
-    font-size: var(--font-semi-large);
+    font-size: var(--font-large);
     color: var(--white);
     margin-top: 10px;
 }
@@ -310,27 +301,25 @@ h1{
 .programas div li{
     display: flex;
     font-family: var(--font-urbanist);
-    font-size: var(--font-xxsmall);
+    font-size: 0.9rem;
     color: #E1E1E1;
     font-weight: lighter;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .programas div li img{
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;
 }
 
 .container_programa{
-    width: 308px;
-    height: 330px;
-    margin: 15px 10px 0px;
+    margin: 15px 10px 30px;
 }
 
 
 .programas div button{
-    width: 224px;
-    height: 54px;
+    width: 200px;
+    height: 50px;
     align-self: center;
     background-color: var(--black);
     color: var(--white);
@@ -343,8 +332,8 @@ h1{
 
 #programa_select{
     background-color: var(--deep-purple);
-    width: 335px;
-    height: 480px;
+    width: 310px;
+    height: 420px;
     padding: 15px 25px;
 }
 
@@ -355,7 +344,7 @@ h1{
 
 #programa_select h4{
     color: var(--white);
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #programa_select p.mensualmente{
@@ -364,11 +353,8 @@ h1{
 }
 
 #programa_select li{
-    font-size: var(--font-xsmall);
-    margin-top: 15px;
-}
-#programa_select button{
-    margin-top: 30px;
+    font-size: var(--font-xxsmall);
+    margin-top: 10px;
 }
 
 
@@ -379,7 +365,7 @@ h1{
 .section_nosotros{
     display: flex;
     flex-direction: column;
-    height: 1378px;
+    height: 1278px;
     background-image: url('/assets/img/background_image/nosotros_img.png');
     align-items: center;
     background-position: center bottom; 
@@ -415,12 +401,14 @@ h1{
     color: var(--white);
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     width: 924px;
     line-height: 28px;
 
 }
+
+
 
 .container_instructores{
     display: flex;
@@ -432,7 +420,12 @@ h1{
 .container_instructores img{
     width: 272px;
     height: 390px;
-    
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.container_por_qué_lo_hacemos h3{
+    margin-top: 60px;
 }
 
 .container_mision_valores_vision{
@@ -445,7 +438,7 @@ h1{
     flex-direction: column;
     width: 372px;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 .mision_valores_vision h4{
@@ -459,7 +452,6 @@ h1{
     font-size: var(--font-xsmall);
     line-height: 28px;
     width: 292px;
-    height: 280px;
     font-weight: 400;
 }
 
@@ -506,7 +498,7 @@ h1{
 
 .carousel_redes{
     display: flex;
-    width: 1172px;
+    width: 1072px;
     height: 432px;
     overflow: hidden;
     justify-content: space-between;
@@ -516,8 +508,8 @@ h1{
 .carousel_redes div{   
     display: flex;
     flex-direction: column;
-    width: 372px;
-    height: 432px;
+    width: 322px;
+    height: 392px;
     background-color:#ffffff18;
     border-radius: 10px;
     border: 1px solid var(--white);
@@ -534,7 +526,7 @@ h1{
 .carousel_redes p.comentario_usuario{
     font-family: var(--font-urbanist);
     font-size: var(--font-x-small);
-    width: 300px;
+    width: 250px;
     margin: 10px 0px 10px 0px;
     text-align: left;
 }
@@ -558,7 +550,7 @@ h1{
 .section_estadisticas {
     display: flex;
     flex-direction: column;
-    height: 804px;
+    height: 704px;
     align-items: center;
 }
 
@@ -592,7 +584,7 @@ h1{
     color: var(--white);
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
-    margin: 130px 0px 30px;
+    margin: 130px 0px 0px;
     text-align: center;
     width: 924px;
     line-height: 28px;
@@ -606,16 +598,17 @@ h1{
     display: flex;
     flex-wrap:wrap;
     width: 50%;
-    height: 476px;
+    height: 376px;
     justify-content: center;
     align-items: center;
     color: var(--white);
+    margin-top: 30px;
 }
 
 .img_cajas{
     background-image: url(/assets/img/background_image/estadisticas.png);
     width: 50%;
-    height: 476px;
+    height: 376px;
 }
 
 .cajas h4{
@@ -641,25 +634,25 @@ h1{
 }
 
 .cuadro1{
-    height: 158px;
+    height: 108px;
     width: 50%;
     padding-right: 20px;
 }
 
 .cuadro2{
-    height: 158px;
+    height: 108px;
     width: 50%;
     padding-left: 10px;
 }
 
 .cuadro3{
-    height: 158px;
+    height: 108px;
     width: 50%;
     padding-right: 20px;
 }
 
 .cuadro4{
-    height: 158px;
+    height: 108px;
     width: 50%;
     padding-left: 10px;
 }
@@ -676,17 +669,17 @@ h1{
 .contanier_formulario{
     display: flex;
     flex-direction: column;
-    width: 472px;
-    height: 930px;
+    width: 372px;
+    height: 30px;
     margin-left: 130px;
 }
 
 
 .contacto h3 {
     color: #7C9CBF;
-    font-size: var(--font-jumbo);
+    font-size: var(--font-large);
     font-family: var(--font-outfit);
-    line-height: 60px;
+    line-height: 40px;
     
     }
 
@@ -694,9 +687,7 @@ h1{
 
 .contacto p {
     font-family: var(--font-urbanist);
-    margin: 20px 0px 20px 0px;
-
-
+    margin: 20px 0px 0px 0px;
 }
 
 
@@ -710,13 +701,13 @@ h1{
 .formulario label{
     font-family: var(--font-outfit);
     color: #7C9CBF;
-    margin: 30px 0px 10px 0px;
+    margin: 20px 0px 10px 0px;
     font-size: var(--font-xsmall);
 }
 
 .formulario input{
     width: 100%;
-    height: 48px;
+    height: 38px;
     border-radius: 4px;
     background:var(--charcoal-gray);
     border: none;
@@ -727,7 +718,7 @@ h1{
 
 .formulario textarea{
     width: 100%;
-    height: 174px;
+    height: 120px;
     border-radius: 4px;
     background:var(--charcoal-gray);
     border: none;
@@ -735,9 +726,6 @@ h1{
     font-size: var(--font-x-small);
     padding: 10px;
 }
-
-
-
 
 input.button_form {
     background-color: #7C9CBF;
@@ -759,19 +747,22 @@ input.button_form {
 
 
 .datos_de_contacto{
-    width: 472px;
+    width: 372px;
     background: rgba(29, 34, 41, 0.8);
-    height: 412px;
+    height: 372px;
     border-radius: 4%;
     margin: 170px auto;
 }
 
-
+input:focus,
+input:not(:placeholder-shown), textarea:focus, textarea:not(:placeholder-shown) {
+    color: #E1E1E1;
+}
 .datos_de_contacto h3{
     color: #7C9CBF;
     font-family: var(--font-outfit);
-    font-size: var(--font-large);
-    margin: 40px 40px 20px 40px;
+    font-size: var(--font-medium);
+    margin: 20px 30px 20px 40px;
 }
 
 
@@ -787,15 +778,14 @@ input.button_form {
     align-items: center;
     text-align: justify;
     font-family: var(--font-urbanist);
-    font-size: var(--font-small);
-
+    font-size: var(--font-xxsmall);
 }
 
 
 .datos li div{
     background-color: var(--black);
-    width: 52px;
-    height: 52px;
+    width: 22px;
+    height: 22px;
     
 }
 
@@ -805,14 +795,20 @@ margin-right: 20px;
     
 }
 
+input.button_form{
+    color:var(--charcoal-gray);
+}
 
 footer {
     display: flex;
 	background-color: var(--charcoal-gray);
-	height: 412px;
-    padding: 60px;
+	height: 400px;
+    padding: 50px;
 }
 
+footer .top{
+    margin-left: 50px;
+}
 .logo-details{
     display: flex;
     flex-direction: row;
@@ -869,6 +865,11 @@ footer {
     background-color: var(--black);
 }
 
+.media-icons a:hover{
+    height: 32px;
+	width: 32px;
+    margin-right: 14px;
+}
 
 .media-icons img{
     display: flex;
@@ -903,6 +904,10 @@ footer {
     margin-bottom: 15px;
 }
 
+footer a:hover{
+    color: var(--forest-green);
+}
+
 hr {
     display: flex;
     color: #ffffff; 
@@ -916,7 +921,7 @@ hr {
 .copyright{
     width: 100%;
     position: absolute;
-    margin-top: 280px;
+    margin: 280px 0px;
     text-align: center;
     font-family: var(--font-urbanist);
 }
