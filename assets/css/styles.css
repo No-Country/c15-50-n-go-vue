@@ -155,7 +155,7 @@ span{
     padding: 0px 10px;
     font-family: var(--font-outfit);
     font-size: var(--font-xxsmall);
-    color: #ffffffa6;
+    
     
 }
 
@@ -167,6 +167,11 @@ span{
     padding-left: 10px;
     color: #03030315;
     border-radius: 4px;
+}
+
+#loginForm input:focus::placeholder,
+#loginForm input:not(:placeholder-shown) {
+    color: var(--black);
 }
 
 .button{
