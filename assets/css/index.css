@@ -459,7 +459,34 @@ h1{
     font-weight: 400;
 }
 
+.patrocinadores{
+    background-color:blueviolet;
+    height: 257px;
+    padding: 10px 100px;
+    
+}
 
+.patrocinadores ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.patrocinadores li{
+    width: 352px;
+    height: 227px;
+    margin: 0;
+    padding: 0;
+ 
+}
+
+.patrocinadores li img{
+    width: 300px;
+    height: 207px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+}
 
 /*Fin sección nosotros*/
 
@@ -668,6 +695,9 @@ h1{
     display: flex;
     background-image: url(/assets/img/background_image/contacto_img.png);
     margin-top: 100px;
+    padding-bottom: 55px;
+    background-repeat: no-repeat;
+    background-position: center center;    
 }
 
 .contanier_formulario{
@@ -681,17 +711,17 @@ h1{
 
 .contacto h3 {
     color: #7C9CBF;
-    font-size: var(--font-large);
+    font-size: 3.5rem;
     font-family: var(--font-outfit);
     line-height: 40px;
-    
+    margin-bottom: 20px;
     }
 
 
 
 .contacto p {
     font-family: var(--font-urbanist);
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
 }
 
 
@@ -705,8 +735,8 @@ h1{
 .formulario label{
     font-family: var(--font-outfit);
     color: #7C9CBF;
-    margin: 20px 0px 10px 0px;
-    font-size: var(--font-xsmall);
+    margin: 10px 0px 4px 0px;
+    font-size: var(--font-xxsmall);
 }
 
 .formulario input{
@@ -722,7 +752,7 @@ h1{
 
 .formulario textarea{
     width: 100%;
-    height: 120px;
+    height: 100px;
     border-radius: 4px;
     background:var(--charcoal-gray);
     border: none;
@@ -739,7 +769,7 @@ input.button_form {
     font-family: var(--font-outfit);
     font-size: var(--font-x-small);
     align-self: center;
-    margin-top: 30px;
+    margin-top: 20px;
     cursor: pointer;
     border: none;
     
@@ -751,11 +781,11 @@ input.button_form {
 
 
 .datos_de_contacto{
-    width: 372px;
+    width: 350px;
     background: rgba(29, 34, 41, 0.8);
-    height: 372px;
+    height: 320px;
     border-radius: 4%;
-    margin: 170px auto;
+    margin: 80px auto;
 }
 
 input:focus,
@@ -776,8 +806,8 @@ input:not(:placeholder-shown), textarea:focus, textarea:not(:placeholder-shown) 
 }
 
 .datos li {
-    margin-bottom: 20px;
-    line-height: 32px;
+    margin-bottom: 10px;
+    line-height: 25px;
     display: flex;
     align-items: center;
     text-align: justify;

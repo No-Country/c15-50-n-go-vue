@@ -127,9 +127,9 @@ body{
 .header_bottom{
     display: flex;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: var(--deep-purple);
     align-items: center;
-    height: 100px;
+    height: 120px;
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
 }
@@ -141,7 +141,7 @@ body{
 
 .header_bar{
     display: flex;
-    color: var(--black);
+    color: var(--white);
     margin-left: 140px;
 }
 
@@ -151,13 +151,8 @@ body{
 
 .header_bar li:hover{
     text-decoration: underline;
-    font-weight: bolder;
 }
 
-nav a.active {
-    color: yellow; /* Puedes ajustar el color según tus preferencias */
-    font-weight: bold;
-  }
 
 
 .header_bar_select{
@@ -168,7 +163,7 @@ nav a.active {
 .header_bar_button{
     display: flex;
     font-family: var(--font-outfit);
-    color: var(--black);
+    color: var(--white);
     margin-right: 130px;
 }
 
@@ -179,7 +174,7 @@ nav a.active {
 
 .button_white{
     display: flex;
-    border: 1px solid var(--black); 
+    border: 1px solid var(--white); 
     border-radius: 4px;
     width: 108px;
     height: 46px;
@@ -204,7 +199,7 @@ nav a.active {
 }
 
 .button_green:hover{
-    box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
+    box-shadow: 0.3px 1px 10px 1px rgba(8, 8, 8, 0.391); 
 
 }
 /*Fin del header*/
@@ -212,9 +207,8 @@ nav a.active {
 footer {
     display: flex;
 	background-color: var(--charcoal-gray);
-	height: 400px;
-
-    padding: 50px;
+	height: 350px;
+    padding: 20px 50px;
     position: relative;
     
 }
@@ -226,7 +220,8 @@ footer .top{
     display: flex;
     flex-direction: row;
     width: 772px;
-    margin-left: 20px;
+    margin: 30px 0px 0px 20px;
+    
 }
 
 
@@ -258,7 +253,7 @@ footer .top{
 
 .media-icons {
 	display: flex;
-	margin-top: 80px;
+	margin-top: 30px;
 	width: 272px;
     margin-left: 20px;
 }
@@ -327,14 +322,14 @@ hr {
     width: 80%;
     height: 2px;
     position: absolute;
-    margin-top: 260px;
+    margin-top: 240px;
     margin-left: 5%;
   }
 
 .copyright{
     width: 100%;
     position: absolute;
-    margin: 280px 0px;
+    margin: 260px 0px;
     text-align: center;
     font-family: var(--font-urbanist);
 }
