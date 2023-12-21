@@ -58,9 +58,8 @@ main{
     flex-direction: row;
     background-image: url(/assets/img/background_image/background_register.png);
     max-width: 100%;
-    height: 100vh;
     justify-content: space-around;
-    padding: 120px 100px;
+    padding: 100px 100px 90px;
 }
 
 
@@ -70,7 +69,6 @@ main{
     width: 472px;
     height: 255px;
     align-self: center;
-
 }
 
 
@@ -80,8 +78,7 @@ main{
     font-size: var(--font-jumbo);
     font-family: var(--font-outfit);
     position: initial;
-    margin: 0px 0px 0px 30px ;
- 
+    margin: 0px 0px 0px 30px;
 }
 
 .titleContent p{
@@ -155,7 +152,7 @@ span{
     padding: 0px 10px;
     font-family: var(--font-outfit);
     font-size: var(--font-xxsmall);
-    
+
     
 }
 

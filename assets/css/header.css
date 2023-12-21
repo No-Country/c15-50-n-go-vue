@@ -208,3 +208,134 @@ nav a.active {
 
 }
 /*Fin del header*/
+
+footer {
+    display: flex;
+	background-color: var(--charcoal-gray);
+	height: 400px;
+
+    padding: 50px;
+    position: relative;
+    
+}
+
+footer .top{
+    margin-left: 50px;
+}
+.logo-details{
+    display: flex;
+    flex-direction: row;
+    width: 772px;
+    margin-left: 20px;
+}
+
+
+.logo-details .logo_name1{
+	color: var(--forest-green);
+    font-size: var(--font-jumbo);
+	font-family:var(--font-outfit);
+	margin: 20px 0px 0px 0px;
+  
+}
+
+.logo-details div{
+    font-size: 60px;
+    font-weight: bolder;
+    margin: 28px 10px;
+}
+
+.logo-details .logo_name2{
+	font-family:var(--font-outfit);
+	font-size: 15px;
+    line-height: 26px;
+    text-align: left;
+    width: 25%;
+    margin: 40px 0px 0px 10px;
+}
+
+
+
+
+.media-icons {
+	display: flex;
+	margin-top: 80px;
+	width: 272px;
+    margin-left: 20px;
+}
+
+.media-icons p{
+    font-family:var(--font-outfit);
+	font-size: 15px;
+    margin-right: 20px;
+}
+
+.media-icons a {
+    display: flex;
+	height: 36px;
+	width: 36px;
+	margin: auto 10px;
+	border-radius: 8px;
+    background-color: var(--black);
+}
+
+.media-icons a:hover{
+    height: 32px;
+	width: 32px;
+    margin-right: 14px;
+}
+
+.media-icons img{
+    display: flex;
+    margin: auto;
+
+}
+
+
+.nav_footer {
+	display: flex;
+    width: 272px;
+    height: 148px;
+    margin-left: 50px;
+}
+
+.services{
+    width: 99px;
+}
+
+.links{
+    width: 167px;
+}
+
+.nav_footer h4{
+    font-family: var(--font-outfit);
+    margin: 30px 0px 20px 0px;
+    color: var(--forest-green);
+}
+
+.nav_footer p{
+    font-family: var(--font-urbanist);
+    margin-bottom: 15px;
+}
+
+footer a:hover{
+    color: var(--forest-green);
+}
+
+hr {
+    display: flex;
+    color: #ffffff; 
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 5%;
+  }
+
+.copyright{
+    width: 100%;
+    position: absolute;
+    margin: 280px 0px;
+    text-align: center;
+    font-family: var(--font-urbanist);
+}
+
