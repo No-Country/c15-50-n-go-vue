@@ -1,11 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>c15-50-n-go-vue</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+
+    <title>R&M GYM</title>
 </head>
+
 <body>
-    <h1>¡Hola mundo!</h1>
+
+    <header> <!--Inicia Header-->
+        <nav>
+            <div class="header_top">
+                <ul class="header_top_left">
+                    <li class="header_top_left_items"><a href="#contacto"><img src="/assets/img/logos/logo_email.png"
+                                alt="logo del email">contacto@r&mgym.com</a></li>
+                    <li class="header_top_left_items"><a
+                            href="https://api.whatsapp.com/send?phone=542213144442&text=Hola!" target="_blank"><img
+                                src="/assets/img/logos/logo_phone.png" alt="logo del teléfono">+54 221 314-4442</a></li>
+                </ul>
+                <ul class="header_top_right">
+                    <li><a href="https://www.facebook.com/thewallgymLP" target="_blank"><img
+                                src="/assets/img/logos/logo_facebook.png" alt="Icono de Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/thewallgym/" target="_blank"><img
+                                src="/assets/img/logos/logo_instagram.png" alt="Icono de Instagram"></a></li>
+                    <li><a href=""><img src="/assets/img/logos/logo_youtube.png" alt="Icono de YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="header_bottom">
+                <picture class="logo_gym_content">
+                    <a href="/index.html">
+                        <img src="/assets/img/logos/logo_r&m_gym.png" alt="Logo R&M GYM">
+                    </a>
+                </picture>
+                <ul class="header_bar" id="menu">
+                    <li><a href="/index.html" class="header_bar_select">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#precios">Precios</a></li>
+                </ul>
+                <ul class="header_bar_button">
+                    <li><a href="#contacto" class="button_white">Contacto</a></li>
+                    <li><a href="/views/registro.html" class="button_green">Registrarme</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> <!--Fin Header-->
+
+    <main> <!--Inicio Main-->
+        <section class="section_hero" id="inicio"> <!--Inicio section_inicio-->
+            <div class="section_hero_img"></div>
+            <div class="container_hero">
+                <h3>Si no lo intentas, nunca lo conseguirás.</h3>
+                <p>Cambia tu cuerpo, cambia tu mente y, cambia tu vida. Encuentra el equilibrio con nuestros
+                    entrenamientos
+                    personalizados . ¡Anímate!</p>
+                <ul class="ul_buttons">
+                    <li><a href="/views/error404.html" class="button_conocer_mas">Conocer más</a></li>
+                    <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
+                </ul>
+            </div>
+        </section> <!--Fin section_inicio-->
+        <section class="section_clases_y_programas"> <!--Inicio section_clases_y_programas-->
+            <div>
+
+                <h1>Clases</h1>
+                <article class="container_clases">
+                    <h3>Clases</h3>
+                    <p>Conoce nuestras clases y disciplinas y elegí el que más se adapte a tus objetivos. No lo dudes.
+                    </p>
+                    <ul class="ul_buttons">
+                        <li><a href="/views/error404.html" class="button_conocer_mas">Más info</a></li>
+                        <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
+                    </ul>
+                </article>
+
+                <div class="slider_clases">
+                    <button class="button_prev" role="button" id="prevBtn"><img
+                            src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
+
+                    <div id='select' class="select_clases">
+
+                        <h4><img src="/assets/img/logos/Icon_clases.png" alt="icono de clases">Crossfit</h4>
+                        <p> ¡La revolución del fitness! Desafíate. Esta clase fusiona fuerza, resistencia y agilidad. En
+                            cada sesión, te sumergirás en un ambiente grupal lleno de energía positiva y superarás tus
+                            límites. ¡Prepárate para la mejor versión de ti mismo! </p>
+                    </div>
+
+                    <button class="button_next" role="button" id="nextBtn"><img
+                            src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div>
+                <div class="slider_programas">
+                    <button class="button_prev" role="button" id="prevBtn"><img
+                            src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
+
+                    <div id='select' class="select_programas">
+
+                        <h4><img src="/assets/img/logos/icon_programas.png" alt="icono de clases">Cardiovascular</h4>
+                        <p>Descubre el poder del entrenamiento cardiovascular e impulsa tu vitalidad. Rompe barreras,
+                            quema calorías y libera la energía que llevas dentro. ¡Únete a la revolución del corazón
+                            fuerte y la vida llena de energía!</p>
+                    </div>
+
+                    <button class="button_next" role="button" id="nextBtn"><img
+                            src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
+                </div>
+
+                <article class="container_programas">
+                    <h3>Programas</h3>
+                    <p>Conoce nuestro programas de entrenamiento y elegí el que más se adapte a tus objetivos. No lo
+                        dudes.</p>
+                    <ul class="ul_buttons">
+                        <li><a href="/views/error404.html" class="button_conocer_mas">Más info</a></li>
+                        <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
+                    </ul>
+                </article>
+            </div>
+
+
+
+
+
+        </section> <!--Fin section_clases_y_programas-->
+        <section class="section_membresías" id="precios"> <!--Inicio section_membresías-->
+            <h2>Membresías</h2>
+            <h3>Nuestros planes</h3>
+
+            <div class="container_periodo">
+                <button class="periodo-btn" id="periodo_select" role="button">Mensual</button>
+                <button class="periodo-btn" role="button">Semestral</button>
+                <button class="periodo-btn" role="button">Anual</button>
+            </div>
+            <div class="programas">
+                <div class="programa_inicial">
+                    <div class="container_programa">
+                        <h4>Inicial</h4>
+                        <p class="precio">$3500</p>
+                        <p class="mensualmente">mensualmente.</p>
+                        <ul>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Acceso 3
+                                días por semana</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">4 clases
+                                mensuales</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Clases
+                                grupales</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Clases
+                                virtuales</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Acceso a
+                                contenido digital</li>
+                        </ul>
+                    </div>
+                    <a href="/views/registro.html"><button role="button">Registrarme</button></a>
+                </div>
+                <div class="programa_estandar" id="programa_select">
+                    <div class="container_programa">
+                        <h4>Estándar</h4>
+                        <p class="precio">$5000</p>
+                        <p class="mensualmente">mensualmente.</p>
+                        <ul>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Acceso 5
+                                días a la semana</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Seguimiento
+                                nutriciona</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Descuentos
+                                exclusivos</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">1x
+                                Suplemento gratis</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Acceso a
+                                contenido digital</li>
+                        </ul>
+                    </div>
+                    <a href="/views/registro.html"><button role="button">Registrarme</button></a>
+                </div>
+                <div class="programa_exclusivo">
+                    <div class="container_programa">
+                        <h4>Exclusivo</h4>
+                        <p class="precio">$7500</p>
+                        <p class="mensualmente">mensualmente.</p>
+                        <ul>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Accesos
+                                ilimitado al gimnasio</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Credencial
+                                del gimnasio</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Seguimiento
+                                nutricional</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">3x
+                                suplementos gratis</li>
+                            <li><img src="/assets/img/background_image/checklist.svg" alt="vector_checklist">Personal
+                                Trainer</li>
+                        </ul>
+                    </div>
+                    <a href="/views/registro.html"><button role="button">Registrarme</button></a>
+                </div>
+            </div>
+
+        </section> <!--Fin section_membresías-->
+        <section class="section_nosotros" id="nosotros"> <!--Inicio section_nosotros-->
+            <h2>Nosotros</h2>
+            <section class="nosotros_head">
+                <div>
+                    <h3>Quiénes somos</h3>
+                    <p>Somos impulsores de cambio y bienestar, apasionados por ofrecer no solo instalaciones de calidad,
+                        sino una experiencia completa que te inspire a superar tus límites y a descubrir tu potencial
+                        máximo. Nos enorgullece guiarte en tu viaje hacia una vida más activa y saludable.</p>
+                </div>
+                <figure class="container_instructores">
+                    <div>
+                        <img src="/assets/img/background_image/foto_instructor_1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/assets/img/background_image/foto_instructor_2.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/assets/img/background_image/foto_instructor_3.png" alt="">
+                    </div>
+                </figure>
+            </section>
+            <section class="container_por_qué_lo_hacemos">
+                <h3>Por qué lo hacemos</h3>
+                <div class="container_mision_valores_vision">
+                    <div class="mision_valores_vision">
+                        <h4>Misión</h4>
+                        <p>Queremos inspirar y guiar a cada persona hacia su mejor versión física y mental. Nos
+                            esforzamos por proporcionar un entorno inclusivo y motivador.. Nos comprometemos a construir
+                            una comunidad que celebre cada logro, grande o pequeño.</p>
+                    </div>
+                    <div class="mision_valores_vision">
+                        <h4>Valores</h4>
+                        <ul>
+                            <li>Pasión por la Transformación</li>
+                            <li>Compromiso y excelencia </li>
+                            <li>Comunidad Inclusiva</li>
+                            <li>Integridad en la Salud</li>
+                            <li>Innovación Continua</li>
+                        </ul>
+                    </div>
+                    <div class="mision_valores_vision">
+                        <h4>Visión</h4>
+                        <p>Crear una autentica conexión con cada miembro de nuestra comunidad. Buscamos dejar un legado
+                            de cambio positivo en la vida de las personas, siendo la plataforma preferida para aquellos
+                            que buscan mejorar su condición física y encontrar un sentido de pertenencia.</p>
+                    </div>
+                </div>
+            </section>
+
+        </section> <!--Fin section_nosotros-->
+
+
+
+        <section class="section_estadisticas">
+            <div class="header_estadisticas">
+                <h2>Estadísticas</h2>
+                <h3>Nuestro éxito en números</h3>
+                <p>Las estadísticas que demuestran el trabajo de todos los que hacemos parte de este equipo</p>
+            </div>
+            <div class="container_cajas">
+
+                <div class="cajas">
+                    <div class="cuadro1">
+                        <h4>10+</h4>
+                        <h5>Años de experiencia</h5>
+                        <p>En la industria del fitness y la transformación personal</p>
+                    </div>
+
+                    <div class="cuadro2">
+                        <h4>500+</h4>
+                        <h5>Miembros activos</h5>
+                        <p>En nuestras instalaciones y plataforma digital</p>
+                    </div>
+
+                    <div class="cuadro3">
+                        <h4>5k</h4>
+                        <h5>Seguidores en instagram</h5>
+                        <p>Comunidad que crece día a día, inspirando nuestro trabajo</p>
+                    </div>
+
+                    <div class="cuadro4">
+                        <h4>6+</h4>
+                        <h5>Expertos Entrenadores</h5>
+                        <p>Un equipo de profesionales que te guiarán siempre</p>
+                    </div>
+
+                </div>
+
+                <div class="img_cajas">
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="section_testimonios"> <!--Inicio section_testimonios-->
+            <h2>Testimonios</h2>
+            <div class="container_testimonios">
+
+                <h3>¿Qué dicen nuestros usuarios?</h3>
+                <p>Conoce las experiencias transformadoras y encuentra la motivación que necesitas para comenzar tu
+                    propio viaje fitness con nosotros. ¡Porque en R&M GYM, cada historia cuenta!
+                </p>
+
+                <div class="carousel_redes" id="carousel_redes">
+                    <button class="button_prev" role="button" id="prevBtn"><img
+                            src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
+                    <div id='card_1' class="prevLeftSecond">
+                        <p class="comentario_usuario">"Desde que me uní a R&M GYM, mi energía ha alcanzado niveles que
+                            nunca imaginé. La comunidad aquí me ha apoyado en cada paso. ¡Este lugar realmente te
+                            transforma!</p>
+                        <p class="name_usuario">Santiago</p>
+                        <p class="usuario_destacado">usuario Facebook</p>
+                    </div>
+                    <div id='card_2' class="cardPrevleft">
+                        <p class="comentario_usuario">He perdido 10 kg y ganado una confianza que nunca creí posible.
+                            Los entrenadores y el ambiente son increíbles. ¡Estoy en el mejor estado físico y mental de
+                            mi vida!</p>
+                        <p class="name_usuario">Julieta</p>
+                        <p class="usuario_destacado">usuario Instagram</p>
+                    </div>
+                    <div id='card_3' class="cardselected">
+                        <p class="comentario_usuario">"R&M GYM no es solo un gimnasio, es mi segunda casa. He
+                            fortalecido mi cuerpo y encontrado amistades duraderas. ¡La decisión de unirme ha sido lo
+                            mejor para mi bienestar!"</p>
+                        <p class="name_usuario">Tomas</p>
+                        <p class="usuario_destacado">usuario YouTube</p>
+                    </div>
+                    <button class="button_next" role="button" id="nextBtn"><img
+                            src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
+                </div>
+            </div>
+
+        </section> <!--Fin section_testimonios-->
+
+
+        <section class="contacto" id="contacto">
+            <div class="contanier_formulario">
+                <h3>Contáctate con nosotros </h3>
+                <p><span>¡Recuerda!</span> Los horarios de atención al cliente son de Lun a Vie de 9 a 21hs y Sábado de
+                    9 a 13hs.</p>
+                <form class="formulario">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" placeholder="Ingresa tu nombre">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" cols="20" rows="3" placeholder="Escriba aqui..."></textarea>
+                    <input class="button_form" type="submit" value="Enviar mensaje">
+                </form>
+            </div>
+
+            <div class="datos_de_contacto">
+                <h3>Datos de contacto</h3>
+                <ul class="datos">
+                    <li class="icon-list"><img src="/assets/img/logos/icon_telefono.png" alt="">+54 112 2334 455</li>
+                    <li class="icon-list"><img src="/assets/img/logos/icon_email.png" alt="">contacto@r&mgym.com</li>
+                    <li class="icon-list"><img src="/assets/img/logos/icon_direccion.png" alt="">Calle Dr Nicasio
+                        Herrera 123, San Miguel de Tucumán, CP 4000, Argentina</li>
+                </ul>
+            </div>
+        </section>
+        <div class="patrocinadores">
+            <ul>
+                <li><img src="/assets/img/background_image/patrocinador1.png" alt=""></li>
+                <li><img src="/assets/img/background_image/patrocinador2.png" alt=""></li>
+                <li><img src="/assets/img/background_image/patrocinador3.png" alt=""></li>
+            </ul>
+        </div>
+    </main> <!--Fin Main-->
+
+    <footer> <!--Inicio footer-->
+        <div class="top">
+            <div class="logo-details">
+                <h2 class="logo_name1">R&M GYM</h2>
+                <div>|</div>
+                <p class="logo_name2">Dr Nicasio Herrera 123 | 
+                    Raúl Colombres 456 | Av Corrientes 678</p>
+            </div>
+            <div class="media-icons">
+                <p>Síguenos</p>
+                <a href="https://www.facebook.com/thewallgymLP" class="fab fa-facebook-f"><img
+                        src="/assets/img/logos/logo_facebook.png" alt=""></a>
+                <a href="#" class="fab fa-twitter"><img src="/assets/img/logos/logo_instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/thewallgym/"" class=" fab fa-instagram"><img
+                        src="/assets/img/logos/logo_youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="nav_footer">
+            <div class="services">
+                <h4>Empresa</h4>
+                <p><a href="#nosotros">Nosotros</a></p>
+                <p><a href="#contacto">Contacto</a></p>
+                <p><a href="/views/error404.html">Sucursales</a></p>
+            </div>
+            <div class="links">
+                <h4>Soporte</h4>
+                <p><a href="/views/preguntas_frecuentes.html">Preguntas frecuentes</a></p>
+                <p><a href="/views/error404.html">Tutoriales</a></p>
+                <p><a href="/views/error404.html">Asistente virtual</a></p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Copyright © 2023 R&M GYM | Todos los derechos reservados | Términos y condiciones | Políticas de
+            privacidad
+        </p>
+
+    </footer><!--Fin footer-->
+
+    <script src="/assets/js/slider.js"></script>
 </body>
+
 </html>

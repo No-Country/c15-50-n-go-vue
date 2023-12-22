@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header> <!--Inicia Header-->
+        <nav>
+            <div class="header_top">
+                <ul class="header_top_left">
+                    <li class="header_top_left_items"><a href="/index.html#contacto"><img
+                                src="/assets/img/logos/logo_email.png" alt="logo del email">contacto@r&mgym.com</a></li>
+                    <li class="header_top_left_items"><a
+                            href="https://api.whatsapp.com/send?phone=542213144442&text=Hola!" target="_blank"><img
+                                src="/assets/img/logos/logo_phone.png" alt="logo del teléfono">+54 221 314-4442</a></li>
+                </ul>
+                <ul class="header_top_right">
+                    <li><a href="https://www.facebook.com/thewallgymLP" target="_blank"><img
+                                src="/assets/img/logos/logo_facebook.png" alt="Icono de Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/thewallgym/" target="_blank"><img
+                                src="/assets/img/logos/logo_instagram.png" alt="Icono de Instagram"></a></li>
+                    <li><a href=""><img src="/assets/img/logos/logo_youtube.png" alt="Icono de YouTube"></a></li>
+                </ul>
+            </div>
+            <div class="header_bottom">
+                <picture class="logo_gym_content">
+                    <a href="/index.html">
+                        <img src="/assets/img/logos/logo_r&m_gym.png" alt="Logo R&M GYM">
+                    </a>
+                </picture>
+                <ul class="header_bar">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/index.html#nosotros">Nosotros</a></li>
+                    <li><a href="/index.html#precios">Precios</a></li>
+                </ul>
+                <ul class="header_bar_button">
+                    <li><a href="/index.html#contacto" class="button_white">Contacto</a></li>
+                    <li><a href="/views/registro.html" class="button_green">Registrarme</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> <!--Fin Header-->
+    <main>
+        <div class="titleContent">
+            <h1 class="title">Consejos</h1>
+            <p>El crecimiento personal y físico ocurre fuera de la zona de confort. Experimenta con nuevas rutinas,
+                desafíos y clases que te saquen de la rutina. ¡El verdadero progreso comienza cuando te atreves a
+                explorar lo desconocido! ¡Bienvenido a una nueva y emocionante etapa de tu viaje fitness!</p>
+        </div>
+        <div class="formContentRegistro">
+            <nav>
+                <ul>
+                    <li><a href="/views/login.html">Iniciar sesión</a></li>
+                    <li><a href="" class="select_option">Crear cuenta</a></li>
+                </ul>
+            </nav>
+
+            <h2>Hazte miembro de R&M</h2>
+            <P>Registrate con tu correo electrónico</P>
+
+            <form id="loginForm">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre">
+                <label for="email">Correo electrónico</label>
+                <input type="text" id="email" name="email" placeholder="Escribe tu correo electrónico">
+                <span id="emailError" class="error"></span>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="Escribe tu contraseña">
+                <label for="password_confirm">Confirmar contraseña</label>
+                <input type="password_confirm" id="password_confirm" name="password_confirm"
+                    placeholder="Escribe tu contraseña nuevamente">
+                <span id="passwordError" class="error"></span>
+                <button type="submit" value="Crear cuenta" class="button" disabled>Crear cuenta</button>
+            </form>
+        </div>
+
+    </main>
+    <footer> <!--Inicio footer-->
+        <div class="top">
+            <div class="logo-details">
+                <h2 class="logo_name1">R&M GYM</h2>
+                <div>|</div>
+                <p class="logo_name2">Dr Nicasio Herrera 123 |
+                    Raúl Colombres 456 | Av Corrientes 678</p>
+            </div>
+            <div class="media-icons">
+                <p>Síguenos</p>
+                <a href="https://www.facebook.com/thewallgymLP" class="fab fa-facebook-f"><img
+                        src="/assets/img/logos/logo_facebook.png" alt=""></a>
+                <a href="#" class="fab fa-twitter"><img src="/assets/img/logos/logo_instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/thewallgym/"" class=" fab fa-instagram"><img
+                        src="/assets/img/logos/logo_youtube.png" alt=""></a>
+            </div>
+        </div>
+        <div class="nav_footer">
+            <div class="services">
+                <h4>Empresa</h4>
+                <p><a href="#nosotros">Nosotros</a></p>
+                <p><a href="#contacto">Contacto</a></p>
+                <p><a href="/views/error404.html">Sucursales</a></p>
+            </div>
+            <div class="links">
+                <h4>Soporte</h4>
+                <p><a href="/views/preguntas_frecuentes.html">Preguntas frecuentes</a></p>
+                <p><a href="/views/error404.html">Tutoriales</a></p>
+                <p><a href="/views/error404.html">Asistente virtual</a></p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">
+            Copyright © 2023 R&M GYM | Todos los derechos reservados | Términos y condiciones | Políticas de
+            privacidad
+        </p>
+
+    </footer><!--Fin footer-->
+
+
+
+    <script src="../assets/js/login.js"></script>
+
+</body>
+
+</html>
