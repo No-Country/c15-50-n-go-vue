@@ -1,65 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comforter&family=DM+Sans:ital,wght@0,700;1,700&family=Lato:wght@700&family=Outfit:wght@600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200&family=Urbanist:wght@400;500&display=swap');
-
-:root {
-    /* Typography */
-    --font-comforter: 'Comforter', sans-serif;
-    --font-dm-sans: 'DM Sans', sans-serif;
-    --font-lato: 'Lato', sans-serif;
-    --font-outfit: 'Outfit', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
-    --font-urbanist: 'Urbanist', sans-serif;
-  
-    /* Palette */
-    --forest-green: #489F31;
-    --deep-purple: #75419E;
-    --charcoal-gray: #1D2229 ;
-    --black: #000000;
-    --white: #FFFFFF;
-    --deep-red: #C51F1F;
-    --deep-orange: #DB681C;
-    --emerald-green: #2DA44E;
-   
-  
-    /* Font-sizes */
-    --font-display: 6rem;
-    --font-jumbo: 4.5rem;
-    --font-semi-large:3.5rem;
-    --font-large: 2.5rem;
-    --font-medium: 2rem;
-    --font-small: 1.5rem;
-    --font-xsmall: 1.25rem;
-    --font-xxsmall: 1rem;
-  
-  }
-
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-    color: var(--white);
-    overflow-x: hidden;
-   
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 main{
     display: flex;
     flex-direction: row;
     background-image: url(/assets/img/background_image/background_register.png);
-    max-width: 100%;
     justify-content: space-around;
-    padding: 100px 100px 90px;
+    background-repeat: no-repeat;
+    padding: 150px 100px 40px;
 }
 
 
@@ -68,7 +13,7 @@ main{
     flex-direction: column;
     width: 472px;
     height: 255px;
-    align-self: center;
+    margin-top: 30px;
 }
 
 
@@ -102,7 +47,7 @@ span{
     height: auto;
     border-radius: 15px;
     align-items: center;
-    margin: 0px 0px;
+    margin: 0px 0px 30px;
     padding-top: 40px;
 }
 

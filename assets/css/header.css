@@ -155,10 +155,7 @@ body{
 
 
 
-.header_bar_select{
-    text-decoration: underline;
-    font-weight: bolder;
-}
+
 
 .header_bar_button{
     display: flex;

@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(/assets/img/background_image/unsplash_buWcS7G1_28.png);
+    margin-top: 170px;
+}
+
+
+.pagina{
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.pagina h1{
+    color: rgba(219, 104, 28, 1);
+    font-size: 75px;
+    font-family:'Outfit';
+    margin-bottom: 5px;
+}
+
+.pagina h2{
+    color: #ffffff;
+    font-size: 50px;
+    font-family:'Outfit';
+    line-height: 50px;
+
+
+}
+
+.pagina p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family:'Urbanist';
+    line-height: 70px;
+
+}
+
+.btn_active{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 0.6rem 1.6rem;
+    border-radius: 13px;
+    font-family:'Outfit';
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    background-color: rgb(0,0,0,0.0);
+        color: #ffffff;
+}
+
+.btn_acti{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 13px;
+    font-family:'Outfit';
+    font-size: 20px;
+    background-color: #489f31;
+    color: #ffffff;
+    border: none;
+}
+
+
+.btn_active:hover{
+    box-shadow: 0.3px 1px 10px 1px rgba(255, 255, 255, 0.253); 
+}
+
+.btn_acti:hover{
+    box-shadow: 0.3px 1px 10px 1px rgba(255, 255, 255, 0.253); 
+}

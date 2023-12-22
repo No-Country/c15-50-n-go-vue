@@ -58,29 +58,49 @@
                     entrenamientos
                     personalizados . ¡Anímate!</p>
                 <ul class="ul_buttons">
-                    <li><a href="#nosotros" class="button_conocer_mas">Conocer más</a></li>
+                    <li><a href="/views/error404.html" class="button_conocer_mas">Conocer más</a></li>
                     <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
                 </ul>
             </div>
         </section> <!--Fin section_inicio-->
         <section class="section_clases_y_programas"> <!--Inicio section_clases_y_programas-->
-            <h1>Clases</h1>
-            <article class="container_clases_y_programas">
-                <h3>Clases</h3>
-                <p>Conoce nuestras clases y disciplinas y elegí el que más se adapte a tus objetivos. No lo dudes.</p>
-                <ul class="ul_buttons">
-                    <li><a href="#nosotros" class="button_conocer_mas">Más info</a></li>
-                    <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
-                </ul>
-            </article>
+          <div>
 
-            <div class="slider">
+              <h1>Clases</h1>
+              <article class="container_clases">
+                  <h3>Clases</h3>
+                  <p>Conoce nuestras clases y disciplinas y elegí el que más se adapte a tus objetivos. No lo dudes.</p>
+                  <ul class="ul_buttons">
+                      <li><a href="/views/error404.html" class="button_conocer_mas">Más info</a></li>
+                      <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
+                  </ul>
+              </article>
+  
+              <div class="slider_clases">
+                  <button class="button_prev" role="button" id="prevBtn"><img
+                          src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
+  
+                  <div id='select' class="select_clases">
+  
+                      <h4><img src="/assets/img/logos/Icon.png" alt="icono de clases">Crossfit</h4>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium viverra.
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium. Ut nunc a
+                          pretium viverra.</p>
+                  </div>
+  
+                  <button class="button_next" role="button" id="nextBtn"><img
+                          src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
+              </div>
+          </div>
+
+          <div>
+            <div class="slider_programas">
                 <button class="button_prev" role="button" id="prevBtn"><img
                         src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
 
-                <div id='select' class="select">
+                <div id='select' class="select_programas">
 
-                    <h4><img src="/assets/img/logos/Icon.png" alt="icono de clases">Header</h4>
+                    <h4><img src="/assets/img/logos/Icon.png" alt="icono de clases">Especifico</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium viverra.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium. Ut nunc a
                         pretium viverra.</p>
@@ -89,6 +109,16 @@
                 <button class="button_next" role="button" id="nextBtn"><img
                         src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
             </div>
+
+            <article class="container_programas">
+                <h3>Programas</h3>
+                <p>Conoce nuestro programas de entrenamiento y elegí el que más se adapte a tus objetivos. No lo dudes.</p>
+                <ul class="ul_buttons">
+                    <li><a href="/views/error404.html" class="button_conocer_mas">Más info</a></li>
+                    <li><a href="/views/registro.html" class="button_registrarse">Registrarme</a></li>
+                </ul>
+            </article>
+        </div>
 
 
 
@@ -237,31 +267,31 @@
                 </p>
 
                 <div class="carousel_redes" id="carousel_redes">
+                    <button class="button_prev" role="button" id="prevBtn"><img
+                        src="/assets/img/background_image/flecha_izquierda.svg" alt=""></button>
                     <div id='card_1' class="prevLeftSecond">
-                        <h4>Facebook</h4>
                         <p class="comentario_usuario">Lorem ipsum dolor sit amet consectetur eget maecenas sapien fusce
                             egestas risus purus suspendisse turpis volutpat onare imperdiet bibendum eleifend quam
                             feugiat sit semper fames.</p>
                         <p class="name_usuario">Santiago</p>
-                        <p class="usuario_destacado">usuario destacado</p>
+                        <p class="usuario_destacado">usuario Facebook</p>
                     </div>
                     <div id='card_2' class="cardPrevleft">
-                        <h4>Facebook</h4>
                         <p class="comentario_usuario">Lorem ipsum dolor sit amet consectetur eget maecenas sapien fusce
                             egestas risus purus suspendisse turpis volutpat onare imperdiet bibendum eleifend quam
                             feugiat sit semper fames.</p>
-                        <p class="name_usuario">Santiago</p>
-                        <p class="usuario_destacado">usuario destacado</p>
+                        <p class="name_usuario">Julieta</p>
+                        <p class="usuario_destacado">usuario Instagram</p>
                     </div>
                     <div id='card_3' class="cardselected">
-                        <h4>Facebook</h4>
                         <p class="comentario_usuario">Lorem ipsum dolor sit amet consectetur eget maecenas sapien fusce
                             egestas risus purus suspendisse turpis volutpat onare imperdiet bibendum eleifend quam
                             feugiat sit semper fames.</p>
-                        <p class="name_usuario">Santiago</p>
-                        <p class="usuario_destacado">usuario destacado</p>
+                        <p class="name_usuario">Tomas</p>
+                        <p class="usuario_destacado">usuario YouTube</p>
                     </div>
-
+                    <button class="button_next" role="button" id="nextBtn"><img
+                        src="/assets/img/background_image/flecha_derecha.svg" alt=""></button>
                 </div>
             </div>
 
@@ -360,13 +390,13 @@
                 <h4>Empresa</h4>
                 <p><a href="#nosotros">Nosotros</a></p>
                 <p><a href="#contacto">Contacto</a></p>
-                <p><a href="#">Sucursales</a></p>
+                <p><a href="/views/error404.html">Sucursales</a></p>
             </div>
             <div class="links">
                 <h4>Soporte</h4>
                 <p><a href="/views/preguntas_frecuentes.html">Preguntas frecuentes</a></p>
-                <p><a href="#">Tutoriales</a></p>
-                <p><a href="#">Asistente virtual</a></p>
+                <p><a href="/views/error404.html">Tutoriales</a></p>
+                <p><a href="/views/error404.html">Asistente virtual</a></p>
             </div>
         </div>
         <hr>
@@ -376,10 +406,6 @@
         </p>
 
     </footer><!--Fin footer-->
-
-
-
-
 
     <script src="/assets/js/slider.js"></script>
 </body>

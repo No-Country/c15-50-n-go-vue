@@ -5,7 +5,7 @@
 
 .section_hero { 
     position: relative;
-    height: 630px;
+    min-height: 100dvh;
 }
 
 .section_hero_img {
@@ -15,7 +15,7 @@
     right: 0;
     bottom: 0;
     background: linear-gradient(to right, rgb(0, 0, 0), transparent), url('/assets/img/background_image/hero_img.png');
-    box-shadow: 50px 10px 40px 70px rgb(0, 0, 0) inset;
+    box-shadow: 50px 0px 30px 50px rgb(0, 0, 0) inset;
     background-repeat: no-repeat;
 }
 
@@ -88,13 +88,20 @@
 /* Inicio sección clases y programas*/
 .section_clases_y_programas{
     display: flex;
-    flex-direction: row;
-    height: 500px;
+    flex-direction: column;
+    height: 900px;
     background-image: url('/assets/img/background_image/clases_img.png');
     background-size: cover;
     margin-top: 40px;
-    box-shadow: 50px 10px 40px 70px rgb(0, 0, 0) inset;
+   
 }
+
+.section_clases_y_programas div{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
 
 h1{
     position: absolute;
@@ -103,24 +110,29 @@ h1{
     line-height: 140px;
     color: #ffffff13;
     width: 723px;
-    margin: 20px 0px 0px 50px;
+    margin: 0px 0px 0px 70px;
     font-weight:bolder;
 }
-.container_clases_y_programas{
-    margin: 70px 0px 0px 130px;
+article.container_clases{
+    margin: 70px 0px 0px 150px;
 
 }
 
-.container_clases_y_programas h3{
+article.container_programas{
+    margin: 50px 80px;
+    
+}
+
+.container_clases h3, .container_programas h3 {
     color: var(--forest-green);
     font-family: var(--font-outfit);
     font-size: var(--font-jumbo);
     line-height: 60px;
-    width: 575px;
+    width: 555px;
 }
 
 
-.container_clases_y_programas p{
+.container_clases p, .container_programas p{
     color: var(--white);
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
@@ -130,14 +142,19 @@ h1{
     font-weight: 400;
 }
 
-.slider{
+.slider_clases, .slider_programas{
     display: flex;
-    width: 572px; 
+    width: 472px; 
     height: 336px;
     margin-right: 130px;
     justify-content: center;
     align-items: center;
 }
+
+.slider_programas{
+    margin: 0px 0px 0px 50px;
+}
+
 
 .button_prev{
     width: 52px;
@@ -162,7 +179,7 @@ h1{
     box-shadow: 0.3px 1px 10px 1px rgba(52, 168, 10, 0.391); 
 }
 
-.select img {
+.select_clases img, .select_programas img {
     max-width: 64px;
     max-height: 64px;
     margin-right: 20px;
@@ -170,31 +187,34 @@ h1{
 
 /* Estilo para el contenido del slider (puedes personalizar según tus necesidades) */
 
-.select{
-    background-color: #824ea994;
+div.select_clases, div.select_programas {
+    display: flex;
+    flex-direction: column;
+    background-color: #824ea9b1;
     width: 350px;
     height: 336px;
-    margin: 0px 30px;
+    margin: 0px 20px;
     border-radius: 4%;
 }
 
 
-.select h4{
+.select_clases h4, .select_programas h4{
     display: flex;
     font-family: var(--font-outfit);
     font-size: var(--font-small);
-    margin: 20px;
+    margin: 30px 0px 15px 30px;
     align-items: center;
 }
 
-.select p{
+.select_clases p, .select_programas p{
     font-family: var(--font-urbanist);
     font-size: var(--font-xxsmall);
     line-height: 32px;
     font-weight: lighter;
-    margin: 10px 30px;
-   
+    margin: 10px 30px;  
 }
+
+
 
 
 
@@ -493,6 +513,7 @@ h1{
 /*Inicio secció testimonios*/
 .section_testimonios{
    display: flex;
+  
 }
 
 .section_testimonios h2{
@@ -502,18 +523,18 @@ h1{
     font-weight: 900;
     position: absolute;
     margin-left: 30px;
+    margin-top: 30px;
 }
 
 .contanier_testimonios{
     position: relative;
-
 }
 
 .section_testimonios h3{
     color: var(--forest-green);
     font-family: var(--font-outfit);
     font-size: var(--font-jumbo);
-    margin: 100px 0px 0px 90px;
+    margin: 120px 0px 0px 90px;
     width: 748px;
     line-height: 60px;
 }
@@ -527,20 +548,13 @@ h1{
     margin: 30px 90px;
 }
 
-.carousel_redes{
-    display: flex;
-    width: 1072px;
-    height: 432px;
-    overflow: hidden;
-    justify-content: space-between;
-    margin: 0px 90px;
-}
+
 
 .carousel_redes div{   
     display: flex;
     flex-direction: column;
     width: 322px;
-    height: 392px;
+    height: 332px;
     background-color:#ffffff18;
     border-radius: 10px;
     border: 1px solid var(--white);
@@ -548,17 +562,12 @@ h1{
 }
 
 
-.carousel_redes h4{
-    font-family: var(--font-outfit);
-    font-size: var(--font-small);
-    font-weight: bolder;
-}
 
 .carousel_redes p.comentario_usuario{
     font-family: var(--font-urbanist);
     font-size: var(--font-x-small);
     width: 250px;
-    margin: 10px 0px 10px 0px;
+    margin: 0px 0px 10px 0px;
     text-align: left;
 }
 
@@ -566,7 +575,7 @@ h1{
     font-family: var(--font-outfit);
     font-size: var(--font-medium);
     text-align: left;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 5px 0px;
 }
 
 .carousel_redes p.usuario_destacado{
@@ -574,6 +583,18 @@ h1{
     font-size: var(--font-x-small);
     margin: 0px 0px 10px 0px;
 }
+
+div.carousel_redes{
+    display: flex;
+    width: 100%;
+    height: 432px;
+    justify-content: space-between;
+    margin: 0px 70px;  
+    align-items: center; 
+
+}
+
+
 /*Fin sección testimonios*/
 
 
@@ -694,10 +715,11 @@ h1{
 .contacto{
     display: flex;
     background-image: url(/assets/img/background_image/contacto_img.png);
+    height: 600px;
     margin-top: 100px;
-    padding-bottom: 55px;
+    padding-bottom: 0px;
     background-repeat: no-repeat;
-    background-position: center center;    
+    background-position: bottom center;    
 }
 
 .contanier_formulario{
