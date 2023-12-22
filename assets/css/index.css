@@ -5,7 +5,7 @@
 
 .section_hero { 
     position: relative;
-    min-height: 100dvh;
+    min-height: 100vh;
 }
 
 .section_hero_img {
@@ -107,14 +107,14 @@ h1{
     position: absolute;
     font-family: var(--font-urbanist);
     font-size: 8.8rem;
-    line-height: 140px;
+    line-height: 100px;
     color: #ffffff13;
     width: 723px;
     margin: 0px 0px 0px 70px;
     font-weight:bolder;
 }
 article.container_clases{
-    margin: 70px 0px 0px 150px;
+    margin: 70px 0px 0px 130px;
 
 }
 
@@ -152,7 +152,7 @@ article.container_programas{
 }
 
 .slider_programas{
-    margin: 0px 0px 0px 50px;
+    margin: 0px 0px 0px 130px;
 }
 
 
@@ -201,15 +201,15 @@ div.select_clases, div.select_programas {
 .select_clases h4, .select_programas h4{
     display: flex;
     font-family: var(--font-outfit);
-    font-size: var(--font-small);
-    margin: 30px 0px 15px 30px;
+    font-size: 1.8rem;
+    margin: 30px 0px 5px 30px;
     align-items: center;
 }
 
 .select_clases p, .select_programas p{
     font-family: var(--font-urbanist);
-    font-size: var(--font-xxsmall);
-    line-height: 32px;
+    font-size: 1.1rem;
+    line-height: 28px;
     font-weight: lighter;
     margin: 10px 30px;  
 }
@@ -280,21 +280,22 @@ div.select_clases, div.select_programas {
 
 .programas{
     display: flex;
-    width: 1000px;
+   
+    width: 100%;
     height: auto;
     align-items: center;
-    justify-content:space-around;
-    
+    justify-content:space-between;
+    padding: 0px 130px;
 }
 
 .programas>div{
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: 320px;
     height: 400px;
     background-color: var(--charcoal-gray);
     border-radius: 16px;
-    padding: 20px 28px;
+    padding: 20px 38px;
 }
 
 .programas div h4{
@@ -321,7 +322,7 @@ div.select_clases, div.select_programas {
 .programas div li{
     display: flex;
     font-family: var(--font-urbanist);
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #E1E1E1;
     font-weight: lighter;
     margin-top: 10px;
@@ -356,9 +357,9 @@ div.select_clases, div.select_programas {
 
 #programa_select{
     background-color: var(--deep-purple);
-    width: 310px;
+    width: 330px;
     height: 420px;
-    padding: 15px 25px;
+    padding: 15px 38px 15px 30px;
 }
 
 .programas div button:hover{
@@ -377,8 +378,9 @@ div.select_clases, div.select_programas {
 }
 
 #programa_select li{
-    font-size: var(--font-xxsmall);
+    font-size: 1.1rem;
     margin-top: 10px;
+    
 }
 
 
@@ -389,7 +391,6 @@ div.select_clases, div.select_programas {
 .section_nosotros{
     display: flex;
     flex-direction: column;
-    height: 1278px;
     background-image: url('/assets/img/background_image/nosotros_img.png');
     align-items: center;
     background-position: center bottom; 
@@ -422,9 +423,9 @@ div.select_clases, div.select_programas {
 }
 
 .section_nosotros p{
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.663);
     font-family: var(--font-urbanist);
-    font-size: var(--font-xsmall);
+    font-size: 1.2rem;
     margin-top: 10px;
     text-align: center;
     width: 924px;
@@ -432,20 +433,39 @@ div.select_clases, div.select_programas {
 
 }
 
-
+.section_nosotros ul li{
+    
+    list-style:disc;
+    color: rgba(255, 255, 255, 0.663);
+    font-family: var(--font-urbanist);
+    font-size: 1.2rem;
+    margin: 14px 0px 22px 10px;
+  
+}
 
 .container_instructores{
     display: flex;
-    width: 950px;
-    justify-content: space-around;
+    width: 100vw;
+    padding: 0px 130px;
     margin-top: 20px; 
+  
+    justify-content: space-between;
+    
+}
+.container_instructores div{
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.805);
+    border-radius: 15px;
+    width: 330px;
+    height: 390px;
+    justify-content: center ;
 }
 
 .container_instructores img{
     width: 272px;
-    height: 390px;
-    border: 1px solid white;
-    border-radius: 15px;
+    height: 388px;
+   
+  
 }
 
 .container_por_qué_lo_hacemos h3{
@@ -454,7 +474,7 @@ div.select_clases, div.select_programas {
 
 .container_mision_valores_vision{
     display: flex;
-    width: 1172px;
+   
 }
 
 .mision_valores_vision{
@@ -473,7 +493,7 @@ div.select_clases, div.select_programas {
 
 .mision_valores_vision p{
     font-family: var(--font-urbanist);
-    font-size: var(--font-xsmall);
+    font-size: 1.2rem;
     line-height: 28px;
     width: 292px;
     font-weight: 400;
@@ -513,7 +533,7 @@ div.select_clases, div.select_programas {
 /*Inicio secció testimonios*/
 .section_testimonios{
    display: flex;
-  
+    padding: 0px 130px;
 }
 
 .section_testimonios h2{
@@ -522,19 +542,19 @@ div.select_clases, div.select_programas {
     color: #ffffff13;
     font-weight: 900;
     position: absolute;
-    margin-left: 30px;
     margin-top: 30px;
 }
 
 .contanier_testimonios{
     position: relative;
+
 }
 
 .section_testimonios h3{
     color: var(--forest-green);
     font-family: var(--font-outfit);
     font-size: var(--font-jumbo);
-    margin: 120px 0px 0px 90px;
+    margin: 120px 0px 0px 0px;
     width: 748px;
     line-height: 60px;
 }
@@ -542,10 +562,11 @@ div.select_clases, div.select_programas {
 .section_testimonios p{
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
+    color: rgba(255, 255, 255, 0.805);
     line-height: 28px;
     font-weight: 400;
     width: 588px;
-    margin: 30px 90px;
+    margin: 30px 30px 0px 0px;
 }
 
 
@@ -553,12 +574,13 @@ div.select_clases, div.select_programas {
 .carousel_redes div{   
     display: flex;
     flex-direction: column;
-    width: 322px;
-    height: 332px;
+    width: 300px;
+    height: 302px;
     background-color:#ffffff18;
     border-radius: 10px;
     border: 1px solid var(--white);
     padding: 40px 34px; 
+    margin: 15px;
 }
 
 
@@ -576,22 +598,21 @@ div.select_clases, div.select_programas {
     font-size: var(--font-medium);
     text-align: left;
     margin: 10px 0px 5px 0px;
+    color: var(--white)
 }
 
 .carousel_redes p.usuario_destacado{
     font-family: var(--font-outfit);
     font-size: var(--font-x-small);
     margin: 0px 0px 10px 0px;
+    color: var(--white)
 }
 
 div.carousel_redes{
     display: flex;
-    width: 100%;
-    height: 432px;
-    justify-content: space-between;
-    margin: 0px 70px;  
+    height: 432px;  
     align-items: center; 
-
+    justify-content: space-between;
 }
 
 
@@ -602,7 +623,7 @@ div.carousel_redes{
 .section_estadisticas {
     display: flex;
     flex-direction: column;
-    height: 704px;
+    height: 754px;
     align-items: center;
 }
 
@@ -618,7 +639,7 @@ div.carousel_redes{
     color: #ffffff13;
     font-weight: 900;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .header_estadisticas h3{
@@ -633,12 +654,12 @@ div.carousel_redes{
 
 .header_estadisticas p{
     position: relative;
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.815);
     font-family: var(--font-urbanist);
     font-size: var(--font-xsmall);
     margin: 130px 0px 0px;
     text-align: center;
-    width: 924px;
+    width: 524px;
     line-height: 28px;
 }
 
@@ -683,6 +704,7 @@ div.carousel_redes{
     font-family: var(--font-urbanist);
     font-size: var(--font-x-small);
     text-align: center;
+    color: rgba(255, 255, 255, 0.815)
 }
 
 .cuadro1{
@@ -716,8 +738,8 @@ div.carousel_redes{
     display: flex;
     background-image: url(/assets/img/background_image/contacto_img.png);
     height: 600px;
-    margin-top: 100px;
-    padding-bottom: 0px;
+    margin-top: 50px;
+    padding: 0px 130px;
     background-repeat: no-repeat;
     background-position: bottom center;    
 }
@@ -727,7 +749,7 @@ div.carousel_redes{
     flex-direction: column;
     width: 372px;
     height: 30px;
-    margin-left: 130px;
+   
 }
 
 
@@ -807,7 +829,7 @@ input.button_form {
     background: rgba(29, 34, 41, 0.8);
     height: 320px;
     border-radius: 4%;
-    margin: 80px auto;
+    margin: 80px 0px 0px 350px;
 }
 
 input:focus,
