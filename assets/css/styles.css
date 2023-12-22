@@ -157,7 +157,7 @@ span{
 }
 
 
-#name, #email, #password, #password_confirm {
+#username, #email, #password, #password_confirm {
     margin: 5px 0px 10px;  
     width: 100%;
     height: 35px; 

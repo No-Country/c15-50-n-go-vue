@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
     <link rel="stylesheet" href="/assets/css/header.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <title>R&M GYM</title>
 </head>
@@ -185,41 +186,48 @@
                     <img src="/assets/img/background_image/foto_instructor_3.png" alt="">
                 </figure>
             </section>
-            <section class="container_por_qué_lo_hacemos">
-                <h3>Por qué lo hacemos</h3>
-                <div class="container_mision_valores_vision">
-                    <div class="mision_valores_vision">
-                        <h4>Misión</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                            viverra.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
-                            viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
-                            pretium
-                            viverra.</p>
-                    </div>
-                    <div class="mision_valores_vision">
-                        <h4>Valores</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                            viverra.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
-                            viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
-                            pretium
-                            viverra.</p>
-                    </div>
-                    <div class="mision_valores_vision">
-                        <h4>Visión</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
-                            viverra.
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
-                            viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
-                            pretium
-                            viverra.</p>
-                    </div>
+            <section id="disciplinasSection" class="nosotros_head2"></section>
+
+            <!-- Yadir Aquí se agregarán las disciplinas dinámicamente 
+                           pero quedan una debajo de otra. Se podrá corregir esto? -->
+
+            </div>
+        </section>
+        <section class="container_por_qué_lo_hacemos">
+            <h3>Por qué lo hacemos</h3>
+            <div class="container_mision_valores_vision">
+                <div class="mision_valores_vision">
+                    <h4>Misión</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
+                        viverra.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
+                        viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
+                        pretium
+                        viverra.</p>
                 </div>
-            </section>
-        
+                <div class="mision_valores_vision">
+                    <h4>Valores</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
+                        viverra.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
+                        viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
+                        pretium
+                        viverra.</p>
+                </div>
+                <div class="mision_valores_vision">
+                    <h4>Visión</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a pretium
+                        viverra.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. . Ut venenatis, n unc a pretium
+                        viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis, nunc a
+                        pretium
+                        viverra.</p>
+                </div>
+            </div>
+        </section>
+
         </section> <!--Fin section_nosotros-->
-        
+
         <div class="patrocinadores">
             <ul>
                 <li><img src="/assets/img/background_image/patrocinador1.png" alt=""></li>
@@ -382,6 +390,79 @@
 
 
     <script src="/assets/js/slider.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Esta función se ejecutará cuando la página HTML se haya cargado completamente
+
+        // Obtén las disciplinas desde la API
+        obtenerDisciplinas();
+
+        async function obtenerDisciplinas() {
+            try {
+                // Realiza la solicitud GET a la API para obtener las disciplinas
+                const response = await axios.get('http://localhost:3000/api/disciplinas');
+                const disciplinas = response.data;
+
+                console.log('Disciplinas obtenidas:', disciplinas); // Agregamos un log para verificar los datos
+
+                // Llama a la función para agregar las disciplinas al contenedor
+                agregarDisciplinasAlContenedor(disciplinas);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function agregarDisciplinasAlContenedor(disciplinas) {
+            const disciplinasSection = document.getElementById('disciplinasSection');
+
+            // Verificar que se haya encontrado el elemento con el id 'disciplinasSection'
+            if (!disciplinasSection) {
+                console.error("Elemento 'disciplinasSection' no encontrado en el HTML.");
+                return;
+            }
+
+            // Crear un contenedor principal para las tarjetas
+            const cardsContainer = document.createElement('div');
+            cardsContainer.className = 'row';
+
+            // Iterar sobre las disciplinas y crear tarjetas
+            disciplinas.forEach((disciplina, index) => {
+                // Crear una tarjeta para cada disciplina
+                const card = document.createElement('div');
+                card.className = 'col-md-4 mb-4'; // Agregar un margen inferior para separar las tarjetas
+
+                // Crear el contenido de la tarjeta
+                const cardContent = `
+                    <img src="${disciplina.image.secure_url}" class="card-img-top" alt="Imagen de la disciplina">
+                    <div class="card-body">
+                        <h5 class="card-title">${disciplina.disciplina}</h5>
+                        <p class="card-text">${disciplina.descripciondiscpl}</p>
+                        <p class="card-text">${disciplina.profesor}</p>
+                        <p class="card-text">${disciplina.fecha.slice(0, 10)}</p>
+                        <p class="card-text">${disciplina.hora}</p>
+                        <button @click="inscribirse(${disciplina._id})" class="btn btn-primary">Reservar</button>
+                        <p class="card-text">${disciplina._id}</p>
+                    </div>
+                `;
+
+                // Agregar el contenido a la tarjeta
+                card.innerHTML = cardContent;
+
+                // Agregar la tarjeta al contenedor principal
+                cardsContainer.appendChild(card);
+            });
+
+            // Limpiar el contenido actual de disciplinasSection
+            disciplinasSection.innerHTML = '';
+
+            // Agregar el contenedor principal al elemento disciplinasSection
+            disciplinasSection.appendChild(cardsContainer);
+        }
+    });
+</script>
+
+
+
 </body>
 
 </html>
