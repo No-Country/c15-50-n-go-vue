@@ -8,6 +8,6 @@ Participantes:
 
 ■ Jadir Rojas - Frontend Developer
 
-■ Ruthciris - Frontend Developer
+■ Ruthciris Rangel - Frontend Developer
 
 ■ Esteban Mataluna - Backend Developer
